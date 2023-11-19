@@ -7,8 +7,8 @@ export const Home = () => {
                 <div className="home-background"></div>
                 <div className="home-content">
                     <section className="home-text">
-                        <p>Welcome!</p>
-                        <h2>I am...</h2>
+                        <h2>Welcome</h2>
+                        <h1>I am Tsvetan Eftenov</h1>
                         <p>based in Veliko Tarnovo, Bulgaria</p>
                         <a href="#">Contact Me</a>
                     </section>
