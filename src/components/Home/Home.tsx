@@ -1,40 +1,48 @@
 import { useState, useEffect } from "react";
 
+const DELAY_BEFORE_TYPING = 800;
+const DELAY_BEFORE_DELETING = 1200;
+const INTERVAL_DELAY = 80;
+
 export const Home = () => {
-    const [messages, setMessages] = useState<string[]>(['Tsvetan Eftenov.', 'a Web Developer.']);
-    const [currentMessage, setCurrentMessage] = useState<string>(messages[0]);
+    const [currentMessage, setCurrentMessage] = useState<string>();
 
     useEffect(() => {
+        const messages = ['Tsvetan Eftenov.', 'a Web Developer.'];
+        setCurrentMessage(messages[0]);
         let messageIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
 
-
         const rotateText = () => {
-            setCurrentMessage((prevMessage) => {
-                if (isDeleting) {
-                    charIndex = Math.max(0, charIndex - 1);
-                } else {
+            if (isDeleting) {
+                charIndex = Math.max(0, charIndex - 1);
+            } else {
+                setTimeout(() => {
                     charIndex = Math.min(messages[messageIndex].length, charIndex + 1);
-                }
+                }, DELAY_BEFORE_TYPING);
+            }
 
-                if (charIndex === 0 && isDeleting) {
-                    messageIndex = (messageIndex + 1) % messages.length;
-                    isDeleting = false;
-                } else if (charIndex === messages[messageIndex].length && !isDeleting) {
-                    setTimeout(() => {
-                        isDeleting = true;
-                    }, 1200);
-                }
+            if (charIndex === 0 && isDeleting) {
+                messageIndex = (messageIndex + 1) % messages.length;
+                isDeleting = false;
+            } else if (charIndex === messages[messageIndex].length && !isDeleting) {
+                setTimeout(() => {
+                    isDeleting = true;
+                }, DELAY_BEFORE_DELETING);
+            }
 
-                return messages[messageIndex].substring(0, charIndex);
-            });
+            updateMessage();
         };
 
-        const intervalId = setInterval(rotateText, 155);
+        const updateMessage = () => {
+            setCurrentMessage(messages[messageIndex].substring(0, charIndex));
+        };
+
+        const intervalId = setInterval(rotateText, INTERVAL_DELAY);
 
         return () => clearInterval(intervalId);
-    }, [messages]);
+    }, []);
 
     return (
         <section className="home">
@@ -56,5 +64,7 @@ export const Home = () => {
                 </span>
             </a>
         </section>
-    )
-}
+    );
+};
+
+export default Home;
