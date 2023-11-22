@@ -47,7 +47,7 @@ export const Home = () => {
     return (
         <section className="home">
             <div className="home-wrapper">
-                <div className="home-mask"></div>
+                <div className="home-mask bg-dark"></div>
                 <div className="home-background"></div>
                 <div className="home-content">
                     <section className="home-text">
@@ -58,10 +58,9 @@ export const Home = () => {
                     </section>
                 </div>
             </div>
-            <a href="#" className="scroll-down-arrow">
-                <span className="animated">
-                    <i className="uil uil-angle-down"></i>
-                </span>
+            <a href="#" className="scroll-down-arrow box">
+                <span className="animated"></span>
+                <span className="animated"></span>
             </a>
         </section>
     );

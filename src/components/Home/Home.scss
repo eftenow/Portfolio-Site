@@ -1,3 +1,8 @@
+.home {
+    height: 100vh;
+    position: relative;
+}
+
 .home-wrapper {
     overflow: hidden;
     position: relative;
@@ -5,10 +10,11 @@
 
     .home-mask {
         position: absolute;
-        opacity: 0.8;
         width: 100%;
-        left: 0;
-        top: 0;
+        height: 100%;
+        opacity: 0.3;
+
+        z-index: 1;
     }
 
     .home-background {
@@ -48,24 +54,24 @@
         * {
             color: $home-font-color;
         }
-        
+
         h1 {
-            font-size: $big-font-size;
+            font-size: $fs-xxx-large;
             margin-top: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.25rem;
         }
 
         h2 {
-            font-size: $h2-font-size;
+            font-size: $fs-xx-large;
         }
 
-        p{
+        p {
             margin-top: 0.25rem;
-            font-size: $h3-font-size;
+            font-size: $fs-large;
         }
 
 
-        a{
+        a {
             background: none;
             color: #20c997;
             border-color: #20c997;
@@ -74,12 +80,43 @@
             border-radius: 1rem;
             transition: all 0.6s ease, color 0.6s ease;
             margin-top: 2.25rem;
+            font-size: $fs-x-medium;
         }
 
-        a:hover{
+        a:hover {
             background: #20c997;
             border-color: #20c997;
             color: $home-font-color;
         }
     }
+
+}
+
+.scroll-down-arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 3;
+
+   .animated{
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-bottom: 3px solid $home-font-color;
+    border-right: 3px solid $home-font-color;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+    margin: -12px;
+   }
+
+   .animated:nth-child(2){
+    animation-delay: -0.2s;
+   }
+
+   .animated:nth-child(3){
+    animation-delay: -0.4s;
+   }
+
 }

@@ -21,13 +21,14 @@ $nav-font-color-i: #b5bbc2;
 $body-font: 'Poppins', sans-serif;
 
 /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-$big-font-size: 2rem;
-$h1-font-size: 1.9rem;
-$h2-font-size: 1.75rem;
-$h3-font-size: 1.125rem;
-$normal-font-size: .938rem;
-$small-font-size: .813rem;
-$smaller-font-size: .75rem;
+$fs-xxx-large: 2.25rem;
+$fs-xx-large: 2rem;
+$fs-x-large: 1.75rem;
+$fs-large: 1.125rem;
+$fs-x-medium: 1.05rem;
+$fs-medium: .95rem;
+$fs-small: .82rem;
+$fs-x-small: .75rem;
 
 /* Font weight */
 $font-medium: 500;
@@ -49,16 +50,6 @@ $z-tooltip: 10;
 $z-fixed: 100;
 $z-modal: 1000;
 
-/* Font size for large devices */
-@media screen and (min-width: 968px) {
-    $big-font-size: 3rem;
-    $h1-font-size: 2.25rem;
-    $h2-font-size: 1.5rem;
-    $h3-font-size: 1.25rem;
-    $normal-font-size: 1rem;
-    $small-font-size: .875rem;
-    $smaller-font-size: .813rem;
-}
 
 /* Others */
 
