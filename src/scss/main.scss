@@ -4,13 +4,14 @@
 @import 'abstracts/mixins',
 'abstracts/variables',
 'abstracts/animations',
-'abstracts/cursor';
+'abstracts/cursor',
+'_colors.scss';
 
 //Base
-@import 'base/base';
+@import 'base/base',
+'base/wrappers';
 
 //Components
 @import '../components/Navigation/Navigation.scss',
 '../components/About/About.scss',
 '../components/Home/Home.scss';
-

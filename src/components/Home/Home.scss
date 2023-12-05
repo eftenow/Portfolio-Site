@@ -94,7 +94,7 @@
 
 .scroll-down-arrow{
     position: absolute;
-    left: 50%;
+    left: 52.5%;
     bottom: 5%;
     transform: translate(-50%, -50%);
     
@@ -108,7 +108,7 @@
     border-right: 3px solid $home-font-color;
     transform: rotate(45deg);
     animation: animate 2s infinite;
-    margin: -12px;
+    margin: -13px;
    }
 
    .animated:nth-child(2){
