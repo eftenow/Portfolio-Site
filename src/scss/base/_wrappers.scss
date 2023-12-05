@@ -1,19 +1,65 @@
 .main-wrapper {
     margin-left: 260px;
-  }
-  
-  .section {
-    overflow: hidden;
-    padding: 4.5rem 0;
+}
+
+.section {
     position: relative;
-  }
-  
-  .container {
+    padding: 4.5rem 0;
+    overflow: hidden;
+
+    @media (max-width: 575.98px) {
+        padding: 3.5rem 0;
+    }
+}
+
+.container {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-left: calc(var(--bs-gutter-x)*.5);
-    padding-right: calc(var(--bs-gutter-x)*.5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
     width: 100%;
-  }
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container-sm {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container-sm,
+    .container-md {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container-sm,
+    .container-md,
+    .container-lg {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 992px) {
+    .px-lg-5 {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}

@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+h4 {
+  color: $heading-font-color;
+  font-weight: $font-semi-bold;
+}
+
+.section-background-header{
+    font-size: calc(1.95rem + 8.4vw);
+    text-transform: uppercase!important;
+    margin-bottom: 0!important;
+    width: 100%!important;
+    color: $slate-purple !important;
+    opacity: 0.2;
+}
+
+.section-header{
+    position: absolute;
+    font-size: $fs-xxx-large;
+    text-align: center;
+    
+}
+
+
+
+

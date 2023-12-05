@@ -52,7 +52,7 @@
         padding: 3rem 0 3rem 3rem;
 
         * {
-            color: $home-font-color;
+            color: $heading-font-color;
         }
 
         h1 {
@@ -86,7 +86,7 @@
         a:hover {
             background: #20c997;
             border-color: #20c997;
-            color: $home-font-color;
+            color: $heading-font-color;
         }
     }
 
@@ -104,8 +104,8 @@
     display: block;
     width: 14px;
     height: 14px;
-    border-bottom: 3px solid $home-font-color;
-    border-right: 3px solid $home-font-color;
+    border-bottom: 3px solid $heading-font-color;
+    border-right: 3px solid $heading-font-color;
     transform: rotate(45deg);
     animation: animate 2s infinite;
     margin: -13px;
