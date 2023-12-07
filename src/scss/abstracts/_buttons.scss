@@ -1,0 +1,21 @@
+.btn {
+    color: $primary-clr;
+    border-color: $primary-clr;
+    border-radius: 2rem;
+    padding: 0.85rem 2.5rem;
+    transition: all 0.6s ease, color 0.6s ease;
+    font-size: $fs-x-medium;
+}
+
+.btn:hover {
+    background: $primary-clr;
+    border-color: $primary-clr !important;
+    color: $heading-font-color;
+}
+
+.btn-primary {
+    color: $white;
+    background-color: $primary-clr;
+    border: none;
+    padding: 0.75rem 1.1rem;
+}

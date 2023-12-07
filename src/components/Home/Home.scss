@@ -51,7 +51,9 @@
         align-items: center;
         padding: 3rem 0 3rem 3rem;
 
-        * {
+        h1,
+        h2,
+        p {
             color: $heading-font-color;
         }
 
@@ -70,53 +72,41 @@
             font-size: $fs-large;
         }
 
-
-        a {
-            background: none;
-            color: #20c997;
-            border-color: #20c997;
+        a{
             border: 2px solid;
-            padding: 0.5rem 0.75rem;
-            border-radius: 1rem;
-            transition: all 0.6s ease, color 0.6s ease;
             margin-top: 2.25rem;
-            font-size: $fs-x-medium;
         }
 
-        a:hover {
-            background: #20c997;
-            border-color: #20c997;
-            color: $heading-font-color;
-        }
+
     }
 
 }
 
-.scroll-down-arrow{
+.scroll-down-arrow {
     position: absolute;
     left: 52.5%;
     bottom: 5%;
     transform: translate(-50%, -50%);
-    
+
     z-index: 3;
 
-   .animated{
-    display: block;
-    width: 14px;
-    height: 14px;
-    border-bottom: 3px solid $heading-font-color;
-    border-right: 3px solid $heading-font-color;
-    transform: rotate(45deg);
-    animation: animate 2s infinite;
-    margin: -13px;
-   }
+    .animated {
+        display: block;
+        width: 14px;
+        height: 14px;
+        border-bottom: 3px solid $heading-font-color;
+        border-right: 3px solid $heading-font-color;
+        transform: rotate(45deg);
+        animation: animate 2s infinite;
+        margin: -13px;
+    }
 
-   .animated:nth-child(2){
-    animation-delay: -0.2s;
-   }
+    .animated:nth-child(2) {
+        animation-delay: -0.2s;
+    }
 
-   .animated:nth-child(3){
-    animation-delay: -0.4s;
-   }
+    .animated:nth-child(3) {
+        animation-delay: -0.4s;
+    }
 
 }
