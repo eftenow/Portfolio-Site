@@ -9,27 +9,47 @@
 }
 
 .about-me-text {
-    flex: 0 0 auto;
     text-align: left !important;
-    width: 58.33333333%;
     color: $secondary-clr;
 
     p {
         margin-bottom: 1rem;
     }
+    
+    h2{
+        font-size: $fs-x-large;
+        margin-bottom: 1rem;
+    }
 }
 
 .info-fields {
-    padding-left: 1.5rem !important;
-
     .info-field {
-        border-bottom: 1px solid #eaeaea;
+        border-bottom: 1px solid $dark-gray;
         list-style-type: none;
         padding: 0.8rem 0;
+
+        &:last-of-type{
+            border-bottom: none;
+        }
 
         & span {
             font-weight: bold;
             margin-right: 0.25rem;
         }
     }
+}
+
+.about-me-info{
+    padding-left: 1.5rem !important;
+    ul{
+        margin-bottom: 1.5rem;
+    }
+    ul * {
+        color: $teritary-clr;
+    }
+
+    &:span{
+        font-weight: $fw-bold;
+    }
+    
 }

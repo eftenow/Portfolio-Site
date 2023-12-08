@@ -5,15 +5,15 @@ $body-font: 'Poppins', sans-serif;
 $fs-xxx-large: 2.25rem;
 $fs-xx-large: 2rem;
 $fs-x-large: 1.75rem;
-$fs-large: 1.125rem;
-$fs-x-medium: 1.05rem;
-$fs-medium: .95rem;
+$fs-large: 1.25rem;
+$fs-medium: 1rem;
 $fs-small: .82rem;
 $fs-x-small: .75rem;
 
 /* Font weight */
-$font-medium: 500;
-$font-semi-bold: 600;
+$fw-regular: 500;
+$fw-bold: 600;
+$fw-dark: 900;
 
 /* Margins  */
 /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
@@ -31,15 +31,3 @@ $z-tooltip: 10;
 $z-fixed: 100;
 $z-modal: 1000;
 
-
-/* Others */
-
-.row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(1.5rem *-.5);
-    margin-right: calc(1.5rem *-.5);
-    margin-top: calc(1.5rem *-1);
-}
