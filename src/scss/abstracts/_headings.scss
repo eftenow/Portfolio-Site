@@ -7,7 +7,7 @@ h4 {
 }
 
 .section-background-header{
-    font-size: calc(1.95rem + 8.4vw);
+    font-size: calc(1.95rem + 7.5vw);
     text-transform: uppercase!important;
     margin-bottom: 0!important;
     width: 100%!important;
@@ -19,6 +19,14 @@ h4 {
     position: absolute;
     font-size: $fs-xxx-large;
     text-align: center;
+
+    .heading-separator{
+      width: 90px;
+      margin: 0 auto;
+      color: $primary-clr;
+      border-bottom: 3px solid $primary-clr;
+      display: block;
+  }
     
 }
 
