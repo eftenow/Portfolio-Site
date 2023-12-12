@@ -55,9 +55,18 @@
     }
 }
 
-.wide-column{
-    flex: 0 0 auto;
-    width: 91.66666667%;
+.wide-column {
+    @media (min-width: 992px) {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+    }
+}
+
+.half-row-column {
+    @media (min-width: 768px) {
+        flex: 0 0 auto;
+        width: 50%;
+    }
 }
 
 .container {
@@ -110,3 +119,4 @@
         padding-right: 3rem !important;
     }
 }
+

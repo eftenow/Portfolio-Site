@@ -1,0 +1,33 @@
+.service-box {
+    display: flex;
+
+    h3 {
+        margin-bottom: 0.5rem;
+        font-size: $fs-large;
+    }
+
+    p {
+        color: $secondary-clr;
+    }
+
+    * {
+        margin: 0 0.25rem;
+
+    }
+}
+
+.service-box-icon-wrapper {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
+    height: 70px;
+    width: 70px;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+
+    i {
+        font-size: 30px;
+        color: $primary-clr;
+    }
+}
