@@ -1,6 +1,7 @@
 import About from "./components/About/About"
 import { Home } from "./components/Home/Home"
 import { Navigation } from "./components/Navigation/Navigation"
+import Services from "./components/Services/Services"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <main className="main-section">
           <Home />
           <About />
+          <Services />
         </main>
       </div>
   )

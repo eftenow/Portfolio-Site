@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id='about' className='section bg-dark-1'>
       <div className='container'>
-        <header className='about-header-wrapper'>
+        <header className='header-wrapper'>
           <h2 className='section-background-header'>ABOUT ME</h2>
           <h3 className='section-header'>Who am I?
             <span className='heading-separator'></span>
