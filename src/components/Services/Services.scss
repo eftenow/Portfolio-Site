@@ -1,18 +1,16 @@
 .service-box {
     display: flex;
+    margin-bottom: 3rem;
 
     h3 {
         margin-bottom: 0.5rem;
         font-size: $fs-large;
+        font-weight: $fw-regular;
     }
 
-    p {
-        color: $secondary-clr;
-    }
 
-    * {
-        margin: 0 0.25rem;
-
+    article{
+        margin-left: 1rem;
     }
 }
 
