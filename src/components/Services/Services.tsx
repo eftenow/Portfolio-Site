@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Services = () => {
     return (
         <section id='services' className='section bg-dark-2'>
