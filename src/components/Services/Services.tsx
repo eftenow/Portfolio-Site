@@ -81,7 +81,7 @@ const Services = () => {
                                 </div>
                                 <article>
                                     <h3 className='service-title'>Version Control & Project Management</h3>
-                                    <p className='service-text'>Utilizing Git and Jira for effective version control and project management, ensuring smooth team collaboration.</p>
+                                    <p className='service-text'>Utilizing Git and Jira for effective project management, ensuring smooth team collaboration.</p>
                                 </article>
                             </li>
                         </ul>
