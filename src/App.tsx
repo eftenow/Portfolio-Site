@@ -2,7 +2,7 @@ import About from "./components/About/About"
 import { Home } from "./components/Home/Home"
 import { Navigation } from "./components/Navigation/Navigation"
 import Services from "./components/Services/Services"
-import Qualifications from "./components/Summary/QUALIFICATIONS"
+import Qualifications from "./components/Qualifications/QUALIFICATIONS"
 
 
 function App() {

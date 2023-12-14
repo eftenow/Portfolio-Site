@@ -1,0 +1,85 @@
+.qualification-btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3.5rem;
+
+    button {
+        font-size: $fs-large;
+        font-weight: $fw-bold;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: $secondary-clr;
+        transition: color 0.5s ease;
+    }
+
+    button:hover {
+        color: $primary-clr;
+    }
+
+    i {
+        font-size: 1.4rem;
+        margin-right: 0.4rem;
+    }
+}
+
+.qualification-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    height: 108px;
+
+    .qualification-box {
+        width: 176px;
+    }
+
+    p {
+        font-size: $fs-small;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+
+    .qualification-calendar {
+        font-size: $fs-small;
+
+        i {
+            margin-right: 0.4rem;
+        }
+    }
+
+    .qualification-rounder {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-color: $primary-clr;
+        border-radius: 50%;
+    }
+
+    .qualification-line {
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: $primary-clr;
+        transform: translate(6px, -7px);
+    }
+}
+
+.qualification-title {
+    font-size: $fs-medium;
+    font-weight: $fw-regular;
+}
+
+.qualification-content[data-content] {
+    display: none;
+}
+
+.qualification-active[data-content] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.qualification-btn.qualification-active {
+    color: $primary-clr;
+}
