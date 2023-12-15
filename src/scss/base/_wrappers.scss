@@ -128,3 +128,19 @@
     }
 }
 
+.introduction-paragraph{
+    text-align: center;
+    padding: 0 2rem;
+    margin: -3rem auto 3rem auto;
+    margin-top: -3.5rem;
+    margin-bottom: 3.25rem;
+    font-size: 0.95rem;
+    max-width: 50vw;
+
+    span{
+        display: block;
+        color: $primary-clr;
+        font-size: $fs-large;
+        font-weight: $fw-bold;
+    }
+}

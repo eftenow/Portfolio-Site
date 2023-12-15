@@ -1,0 +1,40 @@
+.skills-section{
+    .my-skills-header{
+        font-size: $fs-x-large;
+        margin-left: 1.5rem;
+    }
+    
+}
+
+.skill-box-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+
+    .skill-box{
+        max-width: 21%;
+        margin: 0.75rem;
+        padding: 1rem;
+        padding-top: 0.75rem;
+        border-radius: 0.5rem;
+
+        i{
+            font-size: $fs-xxx-large;
+            color: $primary-clr;
+            display: block;
+            margin: 0.4rem 0.25rem;
+        }
+
+        h4{
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        p{
+            margin: 0;
+            font-size: $fs-small;
+        }
+    }
+}
+

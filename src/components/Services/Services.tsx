@@ -10,6 +10,9 @@ const Services = () => {
                 </header>
 
                 <section className='row'>
+                    <p className="introduction-paragraph">
+                        <span><span>Explore my craft</span></span>Embark on a journey through my digital craftsmanship, where technology meets creativity. Below are the realms of my expertise:
+                    </p>
                     <div className='wide-column'>
                         <ul className="row">
                             {/* <li className='half-row-column service-box'>

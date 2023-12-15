@@ -21,6 +21,13 @@ const Qualifications = () => {
                     </h3>
                 </header>
 
+                <p className="introduction-paragraph">
+                    <span>Discover my journey</span> This section unveils the landmarks of my education and career, every step has been a crucial chapter in my story. Join me in exploring the key experiences that have sculpted my journey in the world of technology.
+                </p>
+
+
+
+
                 <section className="qualification-btns">
                     <button className={`qualification-btn ${activeSection === 'education' ? 'qualification-active' : ''}`}
                         onClick={handleEducationClick}>
@@ -34,81 +41,81 @@ const Qualifications = () => {
                         Work experience
                     </button>
                 </section>
+
                 {/* EDUCATION */}
-                <div className={`qualification-content ${activeSection === 'education' ? 'qualification-active' : ''}`} data-content id="education">
+                <ul className={`qualification-content ${activeSection === 'education' ? 'qualification-active' : ''}`} data-content id="education">
                     {/* QUALIFICATION 1 */}
-                    <div className="qualification-data">
-                        <div className="qualification-box">
+                    <li className="qualification-data">
+                        <article className="qualification-box">
                             <h4>Banking & Economics</h4>
                             <p>Professional High School of Economics</p>
                             <div className="qualification-calendar">
                                 <i className="fa-regular fa-calendar"></i>
                                 2013 - 2017
                             </div>
-                        </div>
+                        </article>
 
                         <div>
                             <span className="qualification-rounder"></span>
                             <span className="qualification-line"></span>
                         </div>
-                    </div>
+                    </li>
 
                     {/* QUALIFICATION 2 */}
-                    <div className="qualification-data">
+                    <li className="qualification-data">
                         <div></div>
                         <div>
                             <span className="qualification-rounder"></span>
                             <span className="qualification-line"></span>
                         </div>
 
-                        <div >
+                        <article>
                             <h4>Applied linguistics with English and IT</h4>
                             <p>Veliko Tarnovo University</p>
                             <div className="qualification-calendar">
                                 <i className="fa-regular fa-calendar"></i>
                                 2017 - 2022
                             </div>
-                        </div>
-                    </div>
+                        </article>
+                    </li>
 
                     {/* QUALIFICATION 3 */}
-                    <div className="qualification-data">
+                    <li className="qualification-data">
 
-                        <div className="qualification-box">
+                        <article className="qualification-box">
                             <h4>Web Developement</h4>
                             <p>Software University</p>
                             <div className="qualification-calendar">
                                 <i className="fa-regular fa-calendar"></i>
                                 2022 - 2023
                             </div>
-                        </div>
+                        </article>
                         <div>
                             <span className="qualification-rounder"></span>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
 
                 {/* WORK */}
-                <div className={`qualification-content ${activeSection === 'work' ? 'qualification-active' : ''}`} data-content id="work">
+                <section className={`qualification-content ${activeSection === 'work' ? 'qualification-active' : ''}`} data-content id="work">
                     {/* WORK-QUALIFICATION 1 */}
-                    <div className="qualification-data">
-                        <div className="qualification-box">
-                            <h4>Junior Web Developer</h4>
+                    <li className="qualification-data">
+                        <article className="qualification-box">
+                            <h4>Web Developer</h4>
                             <p>ZestLabs</p>
                             <div className="qualification-calendar">
                                 <i className="fa-regular fa-calendar"></i>
                                 2023 - Present
                             </div>
-                        </div>
+                        </article>
 
                         <div>
                             <span className="qualification-rounder"></span>
-                            {/* <span className="qualification-line"></span> */}
+                            <span className="qualification-line"></span>
                         </div>
-                    </div>
+                    </li>
 
-                </div>
-
+                </section>
             </div>
 
 

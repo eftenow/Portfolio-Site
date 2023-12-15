@@ -2,7 +2,8 @@ import About from "./components/About/About"
 import { Home } from "./components/Home/Home"
 import { Navigation } from "./components/Navigation/Navigation"
 import Services from "./components/Services/Services"
-import Qualifications from "./components/Qualifications/QUALIFICATIONS"
+import Qualifications from "./components/Qualifications/Qualifications"
+import Tools from "./components/Tools/Tools"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <About />
           <Services />
           <Qualifications />
+          <Tools />
         </main>
       </div>
   )
