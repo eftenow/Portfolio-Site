@@ -114,8 +114,13 @@ const Qualifications = () => {
                             <span className="qualification-line"></span>
                         </div>
                     </li>
-
                 </section>
+
+                <div className="cv-btn-wrapper">
+                <button className="btn btn-outline-secondary">
+                    Download CV <i className="fa-solid fa-download"></i>
+                </button>
+                </div>
             </div>
 
 

@@ -12,6 +12,24 @@
     background: $primary-clr;
     border-color: $primary-clr !important;
     color: $heading-font-color;
+    cursor: pointer;
+}
+
+.btn-outline-secondary{
+    color: $mild-dark-gray;
+    border: $mild-dark-gray 2px solid;
+    background: none;
+    padding: 1rem 2.75rem;
+
+    i{
+        margin-left: 0.25rem;
+    }
+}
+
+.btn-outline-secondary:hover{
+    background: $mild-dark-gray !important;
+    color: $white;
+    border-color: $mild-dark-gray !important;
 }
 
 .btn-primary {
