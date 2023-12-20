@@ -1,57 +1,90 @@
-.project-wrapper {
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.project-list{
+    margin-top: 2.5rem ;
     display: flex;
+    align-items: flex-start;
+}
 
-    .left-section {
+.project-info {
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+    position: relative;
+
+
+    .project-image {
+        overflow: hidden;
+        max-height: 55vh;
+        transition: max-height 0.7s ease-in-out;
+
         img {
-            border-radius: 0.6rem;
-            transition: box-shadow 0.3s ease;
-        }
-        .left-section::after {
-            box-shadow: inset 3px 3px 10px 0 #000000;
-            content: '';
-            display: block;
-            height: 100%;
-            position: absolute;
-            top: 0;
             width: 100%;
-          }
-
-        img:hover{
-            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+            height: auto;
+            object-fit: contain;
         }
     }
 
-    .logo-wrapper {
-        max-width: 140px;
-    }
-
-    .right-section {
-        margin-left: 1rem;
+    .project-title {
+        margin-top: -2.5rem;
+        width: fit-content;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        align-items: center;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        padding: 0.6rem 1.25rem;
+        font-weight: 500;
 
+        .show-more-btn {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+            i {
+                color: $primary-clr;
+                margin-left: 0.75rem;
+                margin-right: -0.25rem;
+                margin-bottom: -0.25rem;
+                transition: transform 0.5s ease; 
+            }
+        }
+        
+        .show-more-btn:hover {
+            cursor: pointer;
+            i {
+                transform: translateY(-5px); 
+            }
+        }
+        
+        h3 {
+            color: $primary-clr;
+        }
 
     }
 
-    h4,
-    h3 {
-        color: $secondary-clr;
-    }
-
-    h3 {
-        margin: 1rem 0.15rem;
-        font-size: $fs-larger;
-        font-weight: $fw-bold;
+    .project-data {
+        border-radius: 0.5rem;
+        border-top-left-radius: 0;
+        padding: 1.25rem 1.75rem;
+        margin-top: -0.2rem;
+        font-size: 15px;
     }
 
     h4 {
-        font-size: $fs-large;
+        color: $secondary-clr;
         margin-bottom: 0.5rem;
     }
 
     .badges-wrapper {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .badge {
@@ -64,4 +97,9 @@
         font-size: $fs-small;
         font-weight: $fw-bold;
     }
+}
+
+.hidden{
+    max-height: 0 !important;
+    transition: min-height 0.3s ease-in-out;
 }
