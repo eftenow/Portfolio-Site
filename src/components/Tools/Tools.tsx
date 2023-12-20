@@ -11,7 +11,7 @@ const Tools = () => {
 
 
                 <section className="row skills-section">
-                    <p className="introduction-paragraph"><span>Welcome to my digital toolbox!</span> Here, you'll find a collection of magical tools and technologies that I wield to create, innovate in the digital realm. Each skill allows me to bring ideas to life, conjure up solutions, and sculpt the architecture of digital landscapes.</p>
+                    <p className="introduction-paragraph"><span>Welcome to my digital toolbox</span> Here, you'll find a collection of magical tools and technologies that I wield to create, innovate in the digital realm. Each skill allows me to bring ideas to life, conjure up solutions, and sculpt the architecture of digital landscapes.</p>
                     <ul className="skill-box-wrapper row">
                         <li className="skill-box bg-dark">
                             <i className="devicon-javascript-plain"></i>
