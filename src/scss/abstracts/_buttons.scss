@@ -41,3 +41,25 @@
 .btn-primary:hover {
     background: $darker-primary-clr !important;
 }
+
+.link {
+    position: relative;
+    display: inline-block;
+    animation: ease 0.7s;
+    text-decoration: none; /* Remove default underline */
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px; 
+    left: 0;
+    bottom: 1px;
+    background-color: currentColor; 
+    transition: width 0.3s ease; 
+}
+
+.link:hover::after {
+    width: 100%; 
+}
