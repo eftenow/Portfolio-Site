@@ -1,0 +1,25 @@
+[
+    {
+        "name":"Cinema Critics",
+        "img": "../../public/project-screenshots/cinema-critic-screenshot.png",
+        "logo": "../../public/project-logos/cinema-critic-logo.png",
+        "link": "https://cinema-critics.web.app/",
+        "description": "A hub for movie and TV series enthusiasts, offering a well-organized and engaging platform to explore, discover, discuss and rate a wide array of movies and series. ",
+        "visit": "Visit Cinema Critic and be sure to register and leave a review for your favorite movie or series, you can do that ",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "Python", "Django", "PostgreSQL"
+        ]
+    },
+
+    {
+        "name":"Paw Prints",
+        "img": "",
+        "logo": "",
+        "link": "https://github.com/eftenow/PawPrints_app",
+        "visit": "",
+        "technologies": [
+            "Python", "Django", "PostgreSQL"
+        ]
+        
+    }
+]

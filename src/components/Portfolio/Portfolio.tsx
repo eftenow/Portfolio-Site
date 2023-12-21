@@ -1,4 +1,5 @@
 import PortfolioItem from "./PortfolioItem";
+import portfolioData from "./../../data/portfolioData.json";
 
 const Portfolio = () => {
     return (
@@ -17,9 +18,7 @@ const Portfolio = () => {
                     </p>
 
                     <ul className="project-list">
-                        <PortfolioItem />
-                        <PortfolioItem />
-                        <PortfolioItem />
+                        {portfolioData.map(projectData => <PortfolioItem {...projectData}/>)}
                     </ul>
 
 
