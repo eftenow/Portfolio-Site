@@ -5,7 +5,7 @@
         "logo": "../../public/project-logos/cinema-critic-logo.png",
         "link": "https://cinema-critics.web.app/",
         "description": "A hub for movie and TV series enthusiasts, offering a well-organized and engaging platform to explore, discover, discuss and rate a wide array of movies and series. ",
-        "visit": "Visit Cinema Critic and be sure to register and leave a review for your favorite movie or series, you can do that ",
+        "visit": "Be sure to register and leave a review for your favorite movies, you can do that ",
         "technologies": [
             "HTML", "CSS", "JavaScript", "Python", "Django", "PostgreSQL"
         ]
@@ -13,13 +13,13 @@
 
     {
         "name":"Paw Prints",
-        "img": "",
+        "img": "../../public/project-screenshots/paw-prints-screenshot.png",
         "logo": "",
         "link": "https://github.com/eftenow/PawPrints_app",
         "description": "A platform that connects adorable pets with loving homes, making the journey of finding your perfect pet companion simple and joyful. Whether you're looking to adopt a playful puppy or a cozy cat, PawPrints offers a variety of pets waiting for their home. ",
         "visit": "Find your new loving furry friend ",
         "technologies": [
-            "Python", "Django", "PostgreSQL"
+            "Python", "Django", "Django ORM", "PostgreSQL"
         ]
         
     },
@@ -31,7 +31,7 @@
         "description": "Step into  My Outfit, where every shoe tells a story and every sneaker dreams of hitting the pavement. With the easy-to-use sorting and filtering options, you'll find which shoes fit you best.",
         "visit": "Hop in and find the shoes that fit you best ",
         "technologies": [
-            "HTML", "CSS", "React", "JavaScript"
+            "HTML", "CSS", "ReactJS", "JavaScript"
         ]
         
     },
@@ -43,7 +43,7 @@
         "description": "JobIT Finder is a friendly neighborhood hub for all things IT jobs! Comapny users can increase their ranks, by adding job listings, while regular users can apply for job listings.",
         "visit": "Take a look at what job offerings the IT sector has to offer ",
         "technologies": [
-            "HTML", "SCSS", "React", "TypeScript", "MobX"
+            "HTML", "SCSS", "ReactJS", "TypeScript", "MobX"
         ]
         
     }

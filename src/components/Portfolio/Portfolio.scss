@@ -6,22 +6,26 @@ img {
 .project-list{
     margin-top: 2.5rem ;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
 }
 
 .project-info {
-    margin: 1rem;
+    margin: 2.5rem 0.875rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    max-width: 30vw;
+    max-width: 31vw;
     position: relative;
 
 
     .project-image {
         overflow: hidden;
-        max-height: 55vh;
+        max-height: 100%;
         transition: max-height 0.7s ease-in-out;
+        border-radius: 0.5rem;
 
         img {
             width: 100%;
@@ -31,7 +35,7 @@ img {
     }
 
     .project-title {
-        margin-top: -2.5rem;
+        margin-top: -2.3rem;
         width: fit-content;
         display: flex;
         align-items: center;
@@ -70,9 +74,13 @@ img {
     }
 
     .project-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
         border-radius: 0.5rem;
         border-top-left-radius: 0;
-        padding: 1.25rem 1.75rem;
+        padding: 1.25rem 1.5rem;
         margin-top: -0.2rem;
         font-size: 15px;
     }
@@ -91,8 +99,8 @@ img {
         background-color: $primary-clr;
         color: $white;
         display: block;
-        padding: 0.4rem 0.75rem;
-        margin: 0.25rem;
+        padding: 0.35rem 0.75rem;
+        margin: 0.25rem 0.3rem;
         border-radius: 0.5rem;
         font-size: $fs-small;
         font-weight: $fw-bold;
@@ -102,4 +110,11 @@ img {
 .hidden{
     max-height: 0 !important;
     transition: min-height 0.3s ease-in-out;
+}
+
+.hidden-section{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }

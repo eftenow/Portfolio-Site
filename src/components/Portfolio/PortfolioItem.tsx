@@ -20,7 +20,7 @@ const PortfolioItem = ({name, img, logo, link, description, technologies, visit}
                 </button>
             </div>
 
-            <section className="project-data bg-dark">
+            <section className={`project-data bg-dark ${selected && 'hidden-section'}`}>
                 <p>{description}</p>
                 <p>{visit} <a className='text-primary link' href={link}>here.</a></p>
                 <h4>Technologies used:</h4>
