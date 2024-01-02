@@ -4,7 +4,7 @@
         "img": "../../public/project-screenshots/cinema-critic-screenshot.png",
         "logo": "../../public/project-logos/cinema-critic-logo.png",
         "link": "https://cinema-critics.web.app/",
-        "description": "A hub for movie and TV series enthusiasts, offering a well-organized and engaging platform to explore, discover, discuss and rate a wide array of movies and series. ",
+        "description": "A hub for movie and TV series enthusiasts, offering a user-friendly, well-organized and engaging platform to explore, discover, discuss, bookmark and rate a wide array of movies and series.",
         "visit": "Be sure to register and leave a review for your favorite movies, you can do that ",
         "technologies": [
             "HTML", "CSS", "JavaScript", "Python", "Django", "PostgreSQL"
@@ -16,7 +16,7 @@
         "img": "../../public/project-screenshots/paw-prints-screenshot.png",
         "logo": "",
         "link": "https://github.com/eftenow/PawPrints_app",
-        "description": "A platform that connects adorable pets with loving homes, making the journey of finding your perfect pet companion simple and joyful. Whether you're looking to adopt a playful puppy or a cozy cat, PawPrints offers a variety of pets waiting for their home. ",
+        "description": "A platform that connects pets with loving homes, making the journey of finding your perfect pet companion simple and joyful. Whether you're looking to adopt a playful puppy or a cozy cat, PawPrints is the place for you.",
         "visit": "Find your new loving furry friend ",
         "technologies": [
             "Python", "Django", "Django ORM", "PostgreSQL"
@@ -29,7 +29,7 @@
         "logo": "",
         "link": "https://myoutfit-catalogue.web.app/",
         "description": "Step into  My Outfit, where every shoe tells a story and every sneaker dreams of hitting the pavement. With the easy-to-use sorting and filtering options, you'll find which shoes fit you best.",
-        "visit": "Hop in and find the shoes that fit you best ",
+        "visit": "Hop in and find the shoes that fit your unique style right ",
         "technologies": [
             "HTML", "CSS", "ReactJS", "JavaScript"
         ]

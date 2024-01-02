@@ -1,7 +1,38 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 import PortfolioItem from "./PortfolioItem";
 import portfolioData from "./../../data/portfolioData.json";
 
 const Portfolio = () => {
+
+    const sliderSettings = {
+        accessibility:true,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
     return (
         <section id='summary' className='section bg-dark-1'>
             <div className='container'>
@@ -13,21 +44,20 @@ const Portfolio = () => {
                 </header>
 
                 <section className="row portfolio-section">
-                    <p className="introduction-paragraph">
-                        <span>Explore My Digital Creations</span> Journey through my tech endeavors that showcases a blend of elegant design and intricate systems. Each project is a reflection of my commitment to creating meaningful digital experiences.
-                    </p>
-
-                    <ul className="project-list">
-                        {portfolioData.map(projectData => <PortfolioItem {...projectData}/>)}
-                    </ul>
-
-
+                    <div className="slide-container bg-dark-2">
+                        <div className="slide-content">
+                            <Slider {...sliderSettings}>
+                                {portfolioData.map(projectData => (
+                                    <div className="card-wrapper">
+                                        <PortfolioItem {...projectData} />
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
+                    </div>
                 </section>
-
-            </div>
-        </section>
-
-
+            </div >
+        </section >
     )
 }
 
