@@ -11,7 +11,7 @@ const Contact = () => {
                     </h3>
                 </header>
                     <section className='contact-me-content row'>
-                        <ul className='column address-info'>
+                        <ul className='address-info'>
                             <li className='call'>
                                 <i className="fa-solid fa-phone"></i>
                                 <div>
@@ -28,7 +28,7 @@ const Contact = () => {
                                 </div>
                             </li>
 
-                            <li className='email'>
+                            <li className='location'>
                             <i className="fa-solid fa-location-dot"></i>
                                 <div>
                                     <h3>Location</h3>
@@ -41,7 +41,8 @@ const Contact = () => {
                             <form className='form-dark' id='contact-form'>
                                 <input name='username' type="text" className='form-field' placeholder='Name' />
                                 <input name='email' type="email" className='form-field' placeholder='Email' />
-                                <textarea name='message' rows="10" className='form-field' placeholder='Message'></textarea>
+                                <textarea name='message' className='form-field' placeholder='Message'></textarea>
+                                <button className='btn btn-primary'>Send</button>
                             </form>
                         </div>
                     </section>
