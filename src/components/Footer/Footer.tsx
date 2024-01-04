@@ -13,7 +13,7 @@ const Footer = () => {
             iconsRef.current.forEach((icon, index) => {
                 setTimeout(() => {
                     icon?.classList.add('in-view');
-                }, index * 200); 
+                }, index * 200);
             });
         }
     }, [inView]);
@@ -47,9 +47,11 @@ const Footer = () => {
                     </div>
                 </li>
 
-                <li ref={el => iconsRef.current[4] = el} className='media-link message' >
+                <li className='media-link message'>
                     <div className='animate_fade'>
-                        <a href="https://github.com/" className="media-icon"><i className="fa fa-envelope"></i></a>
+                        <a href="mailto:tsvetan.eftenov@gmail.com" className="media-icon">
+                            <i className="fa fa-envelope"></i>
+                        </a>
                     </div>
                 </li>
             </ul>
