@@ -1,24 +1,59 @@
-footer{
+footer {
     display: flex;
+    flex-direction: column;
     padding: 3.5rem 0;
     align-items: center;
     justify-content: center;
-    
-    *{
+
+    * {
         color: $nav-font-color;
     }
 
-    ul{
+    ul {
         display: flex;
     }
 
-    .media-btn{
+    .media-link {
         padding: 0.25rem;
+        margin: 0.5rem 0.25rem;
 
-        a{
-            font-size: 18px;
+        a {
+            border: 1px solid #fff;
+            border-radius: 50%;
+            color: #fff;
+            display: block;
+            font-size: $fs-larger;
+            height: 44px;
+            line-height: 42px;
+            text-align: center;
+            width: 44px;
+            transition: all .75s ease 0s;
         }
     }
 
+    .facebook a:hover{
+        background-color: rgba(7,115,216,.778);
+    }
 
+    .github a:hover{
+        background-color:rgba(180, 180, 180, 0.2);
+    }
+
+    .linkedin a:hover{
+        background-color: rgba(100, 149, 237, 1);
+    }
+
+
+
+}
+
+.fadeInUp {
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
 }
