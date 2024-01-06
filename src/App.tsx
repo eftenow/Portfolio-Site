@@ -13,7 +13,7 @@ function App() {
 
   return (
       <div className="main-wrapper">
-        <Navigation />        
+        <Navigation />
         <main className="main-section">
           <Home />
           <About />
