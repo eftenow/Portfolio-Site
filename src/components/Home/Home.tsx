@@ -45,7 +45,7 @@ export const Home = () => {
     }, []);
 
     return (
-        <section className="home">
+        <section className="home" id="home">
             <div className="home-wrapper">
                 <div className="home-mask bg-dark"></div>
                 <div className="home-background"></div>

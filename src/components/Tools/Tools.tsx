@@ -1,6 +1,6 @@
 const Tools = () => {
     return (
-        <section id='summary' className='section bg-dark-2'>
+        <section id='tools' className='section bg-dark-2'>
             <div className='container'>
                 <header className='header-wrapper'>
                     <h2 className='section-background-header'>TOOLS</h2>

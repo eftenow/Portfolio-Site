@@ -12,7 +12,7 @@ const Qualifications = () => {
     };
 
     return (
-        <section id='summary' className='section bg-dark-1'>
+        <section id='experience' className='section bg-dark-1'>
             <div className='container'>
                 <header className='header-wrapper'>
                     <h2 className='section-background-header'>EXPERIENCE</h2>

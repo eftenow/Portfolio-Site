@@ -47,7 +47,7 @@ const Footer = () => {
                     </div>
                 </li>
 
-                <li className='media-link message'>
+                <li ref={el => iconsRef.current[4] = el} className='media-link message'>
                     <div className='animate_fade'>
                         <a href="mailto:tsvetan.eftenov@gmail.com" className="media-icon">
                             <i className="fa fa-envelope"></i>
