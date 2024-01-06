@@ -1,5 +1,7 @@
 
-export const Navigation = () => {
+export const Navigation = ({currentSection}) => {
+
+
     return (
         <header className="header left-section">
             <nav className="primary-menu navbar-expand bg-dark">
@@ -10,13 +12,13 @@ export const Navigation = () => {
 
                 <div className="side-nav-mid">
                     <ul className="navbar-list">
-                        <li className="nav-item"><a className='nav-link' href="#home"><i className="uil uil-estate"></i> Home</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#about"><i className="uil uil-user"></i> About</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#services"><i className="uil uil-file-alt"></i> Services</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#experience"><i className="uil uil-file-alt"></i> Experience</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#tools"><i className="uil uil-scenery"></i> Tools</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#portfolio"><i className="uil uil-message"></i> Portfolio</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#contact"><i className="uil uil-message"></i> Contact</a></li>
+                        <li  className="nav-item"><a className={`nav-link ${currentSection == "home" && "text-primary"}`} href="#home"><i className="uil uil-estate"></i> Home</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "about" && "text-primary"}`} href="#about"><i className="uil uil-user"></i> About</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "services" && "text-primary"}`} href="#services"><i className="fa-regular fa-folder"></i> Services</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "experience" && "text-primary"}`} href="#experience"><i className="uil uil-file-alt"></i> Experience</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "tools" && "text-primary"}`} href="#tools"><i className="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "portfolio" && "text-primary"}`} href="#portfolio"><i className="fa-regular fa-address-card"></i> Portfolio</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "contact" && "text-primary"}`} href="#contact"><i className="fa-regular fa-envelope"></i> Contact</a></li>
                     </ul>
                 </div>
 
