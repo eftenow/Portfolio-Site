@@ -65,8 +65,30 @@
         margin: 0.5rem;
 
         .media-icon {
-            padding: 0.25rem;
+            padding: 0.35rem;
             color: $nav-font-color;
+            font-size: 1.125rem;
+            transition: all .75s ease 0s;
+        }
+        
+        .facebook:hover{
+            color: rgba(7,115,216,.778);
+        }
+    
+        .github:hover{
+            color:rgba(194, 189, 189, 0.315);
+        }
+    
+        .linkedin:hover{
+            color: rgba(100, 149, 237, 1);
+        }
+    
+        .gitlab:hover{
+            color: rgba(252, 109, 38, 0.8);
+        }
+    
+        .message:hover{
+            color: $primary-clr;
         }
     }
 }

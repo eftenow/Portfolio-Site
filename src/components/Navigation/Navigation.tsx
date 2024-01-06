@@ -23,8 +23,14 @@ export const Navigation = ({currentSection}) => {
                 </div>
 
                 <ul className="side-nav-bot">
-                    <li><a href="https://github.com/" className="media-icon"><i className="uil uil-message"></i></a></li>
-                    <li><a href="https://www.linkedin.com/" className="media-icon"><i className="uil uil-linkedin"></i></a></li>
+                    <li><a href="https://github.com/eftenow" className="media-icon github"><i className="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://gitlab.com/eftenow" className="media-icon gitlab"><i className="fa-brands fa-gitlab"></i></a></li>
+                    <li><a href="#" className="media-icon facebook"><i className="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/tsvetan-eftenov/" className="media-icon linkedin"><i className="uil uil-linkedin"></i></a></li>
+                    <li><a href="mailto:tsvetan.eftenov@gmail.com" className="media-icon message">
+                            <i className="fa fa-envelope"></i>
+                        </a></li>
+
                 </ul>
             </nav>
         </header>

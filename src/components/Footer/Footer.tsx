@@ -28,22 +28,22 @@ const Footer = () => {
                         <a href="https://github.com/eftenow" className="media-icon"><i className="fa-brands fa-github"></i></a>
                     </div>
                 </li>
-
-                <li ref={el => iconsRef.current[1] = el} className='media-link facebook'>
-                    <div className='animate_fade'>
-                        <a href="#" className="media-icon"><i className="fa-brands fa-facebook"></i></a>
-                    </div>
-                </li>
-
-                <li ref={el => iconsRef.current[2] = el} className='media-link gitlab'>
+                <li ref={el => iconsRef.current[1] = el} className='media-link gitlab'>
                     <div className='animate_fade'>
                         <a href="https://gitlab.com/eftenow" className="media-icon"><i className="fa-brands fa-gitlab"></i></a>
                     </div>
                 </li>
 
+                <li ref={el => iconsRef.current[2] = el} className='media-link facebook'>
+                    <div className='animate_fade'>
+                        <a href="#" className="media-icon"><i className="fa-brands fa-facebook"></i></a>
+                    </div>
+                </li>
+
+
                 <li ref={el => iconsRef.current[3] = el} className='media-link linkedin' >
                     <div className='animate_fade'>
-                        <a href="https://www.linkedin.com/" className="media-icon"><i className="uil uil-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/tsvetan-eftenov/" className="media-icon"><i className="uil uil-linkedin"></i></a>
                     </div>
                 </li>
 

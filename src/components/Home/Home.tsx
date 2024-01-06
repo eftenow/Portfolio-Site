@@ -54,7 +54,7 @@ export const Home = () => {
                         <h2>Welcome</h2>
                         <h1>I am {currentMessage}<span className="cursor">|</span></h1>
                         <p>based in Veliko Tarnovo, Bulgaria</p>
-                        <a href="#" className="btn">Contact Me</a>
+                        <a href="#contact" className="btn">Contact Me</a>
                     </section>
                 </div>
             </div>
