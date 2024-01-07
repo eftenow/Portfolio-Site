@@ -58,7 +58,7 @@ export const Home = () => {
                     </section>
                 </div>
             </div>
-            <a href="#" className="scroll-down-arrow box">
+            <a href="#about" className="scroll-down-arrow box">
                 <span className="animated"></span>
                 <span className="animated"></span>
             </a>

@@ -13,14 +13,14 @@ const About = () => {
         <article className='row about-me-content'>
           <article className='about-me-text primary-column'>
             <h2>I'm <span className='text-primary '>Tsvetan Eftenov,</span> a Web Developer</h2>
-            <p>I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <p>Delivering work within time and budget which meets client’s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.</p>
+            <p>In early 2022, I started my coding adventure and it's been a one-way journey ever since. Initially, I got into Python, driven by curiosity and passion I gradually expanded into JavaScript and front-end development as well.</p>
+            <p>Dive into the vibrant world of Full-Stack Development with me, where coding isn't just typing on a keyboard, but a quest for innovation! Armed with NodeJS, Python, and React, I explore the digital world, reshaping complex challenges into engaging riddles.</p>
           </article>
 
           <section className='about-me-info column'>
             <ul className='info-fields'>
               <li className='info-field'><span>Name: </span>Tsvetan Eftenov</li>
-              <li className='info-field'><span>Email: </span>tsvetan.eftenov@gmail.com</li>
+              <li className='info-field'><span>Email: </span><span className='text-primary'>tsvetan.eftenov@gmail.com</span></li>
               <li className='info-field'><span>Age: </span>26</li>
               <li className='info-field'><span>From: </span>Veliko Tarnovo, Bulgaria</li>
             </ul>
