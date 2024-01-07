@@ -9,17 +9,12 @@ const PortfolioItem = ({ name, img, logo, link, description, technologies, visit
     }
 
     return (
-        <div className="card bg-dark">
-            <div className="image-content">
-                <span className="overlay"></span>
-                <div className="card-image">
-                    <img src={img} alt="" className="card-img" />
-                </div>
-            </div>
+        <div className="card">
+            <img src={img} alt="" className="card-img" />
             <div className="card-content">
-                <h2 className="name">{name}</h2>
-                <p className="descritpion">{description}</p>
-                <p className='visit'>{visit}</p>
+                <h2 className="project-name">{name}</h2>
+                <p className="project-descritpion">{description}</p>
+                <p className='project-visit'>{visit}</p>
 
                 <button className="btn-primary btn visit-btn">Visit</button>
             </div>

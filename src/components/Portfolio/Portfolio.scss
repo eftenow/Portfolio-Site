@@ -2,7 +2,6 @@
     max-width: 100%;
     border-radius: 1rem;
     padding: 2.25rem 1.75rem;
-    background-color: #707070;
 }
 
 .portfolio-section{
@@ -18,15 +17,16 @@
 
 .card{
     border-radius: 1.5rem;
-    background-color: black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 1rem;
 
-    // &:nth-child(odd) {
-    //     margin-left: 1.1rem;
-    // }
+    .card-img{
+        width: 340px;
+        border-radius: 0.5rem;
+    }
 }
 
 .image-content, .card-content{
@@ -68,13 +68,13 @@
     }
 }
 
-.name{
+.project-name{
     font-size: $fs-large;
     margin-bottom: 1rem;
     color: $white;
 }
 
-.description{
+.project-description{
     font-size: 14px;
     text-align: center;
 }

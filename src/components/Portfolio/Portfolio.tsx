@@ -13,14 +13,14 @@ const Portfolio = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             },
             {
@@ -44,7 +44,7 @@ const Portfolio = () => {
                 </header>
 
                 <section className="row portfolio-section">
-                    <div className="slide-container bg-dark-2">
+                    <div className="slide-container">
                         <div className="slide-content">
                             <Slider {...sliderSettings}>
                                 {portfolioData.map(projectData => (
