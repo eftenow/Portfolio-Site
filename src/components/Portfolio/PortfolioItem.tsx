@@ -16,7 +16,7 @@ const PortfolioItem = ({ name, img, logo, link, description, technologies, visit
                 <p className="project-descritpion">{description}</p>
                 <p className='project-visit'>{visit}</p>
 
-                <button className="btn-primary btn visit-btn">Visit</button>
+                <a href={link} className="btn-primary btn visit-btn">Visit</a>
             </div>
         </div>
     )
