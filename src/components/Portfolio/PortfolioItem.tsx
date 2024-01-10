@@ -1,13 +1,14 @@
-import { MouseEvent, useState } from 'react'
+interface PortfolioListItem {
+    "name": string,
+    "img": string,
+    "logo": string,
+    "link": string,
+    "description": string,
+    "technologies": string[],
+    "visit": string,
+}
 
-const PortfolioItem = ({ name, img, logo, link, description, technologies, visit }) => {
-    const [selected, setSelected] = useState(false);
-
-    const toggleSelected = (e: MouseEvent) => {
-        e.preventDefault();
-        setSelected(currentSelection => !currentSelection);
-    }
-
+const PortfolioItem = ({ name, img, logo, link, description, technologies, visit } :PortfolioListItem) => {
     return (
         <div className="card">
             <img src={img} alt="" className="card-img" />
