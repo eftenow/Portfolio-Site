@@ -1,7 +1,12 @@
 .slide-container{
     max-width: 100%;
     border-radius: 1rem;
-    padding: 2.25rem 1.75rem;
+    padding: 2.25rem;
+    padding-top: 0.5rem;
+
+    @include desktop {
+        padding: 2.25rem 1.5rem;
+    }
 }
 
 .portfolio-section{
@@ -16,16 +21,22 @@
 }
 
 .card{
-    border-radius: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    margin: 0 1.5rem 2.5rem 1.5rem;
+
+    @include desktop {
+        margin: 0 0 2.5rem 0;
+    }
 
     .card-img{
-        width: 340px;
+        width: 52.5%;
         border-radius: 0.5rem;
+        @include desktop {
+            width: 60%;
+        }
     }
 }
 
@@ -39,10 +50,19 @@
     align-items: center;
     margin: 1rem 0;
 
-    & p{
-        font-size: $fs-small;
-        align-self: start;
+    @include desktop {
+        padding: 1rem 0.75rem;
     }
+
+    & p{
+        font-size: $fs-medium;
+        align-self: start;
+        @include desktop {
+            font-size: $fs-small;
+        }
+    }
+    
+ 
 }
 
 .image-content{
@@ -85,7 +105,9 @@
 }
 
 .slick-prev {
+    top: 60%;
     z-index: 1;
+    left: 1rem;
     &:before {
         font-family: 'slick';
         color: $primary-clr; 
@@ -96,13 +118,18 @@
 
 
 .slick-next {
-    right: -1%;
+    top: 60%;
+    right: 1rem;
     &:before {
         font-family: 'slick';
         color: $primary-clr; 
         font-size: 32px; 
         content: '→'; 
     }
+}
+
+.slick-slider{
+    position: inherit;
 }
 
 .slick-dots {
