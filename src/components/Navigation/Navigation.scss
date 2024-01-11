@@ -15,7 +15,15 @@
         position: fixed;
         top: 0;
         width: 260px;
-        z-index: 2;
+        z-index: 10;
+
+        @include desktop-small {
+            flex-direction: row;
+            height: auto !important;
+            width: 100%;
+            overflow: visible;
+            padding: 0.55rem 1.25rem;
+        }
     }
 
     .avatar-container {
@@ -28,6 +36,9 @@
 
         img {
             border-radius: 50%;
+        }
+        @include desktop-small {
+            display: none;
         }
     }
 
@@ -48,21 +59,37 @@
 
     .nav-item {
         padding: 0.4rem;
+        transition: transform 0.4s ease;
 
         a {
             color: $nav-font-color;
             font-weight: $fw-bold !important;
+            transition: all 0.4s;
+        }
+        a:hover{
+            color: $primary-clr;
         }
 
         i{
             margin-right: 0.15rem;
         }
+
+        @include desktop-small {
+            display: none;
+        }
+    }
+    .nav-item:hover{
+        transform: translateX(0.25rem) !important;
     }
 
     .side-nav-bot {
         display: flex;
         flex-direction: row;
         margin: 0.5rem;
+
+        @include desktop-small {
+            display: none;
+        }
 
         .media-icon {
             padding: 0.35rem;
@@ -90,5 +117,49 @@
         .message:hover{
             color: $primary-clr;
         }
+    }
+
+    .burger-menu-button {
+        display: none;
+        cursor: pointer;
+        z-index: 11;
+        background: none;
+        border: none;
+        padding: 0.5rem;
+
+        @include desktop-small {
+            display: block;
+        }
+    
+        &.close-nav {
+            .bar {
+                margin-bottom: 0;
+            }
+    
+            :nth-child(2) {
+                opacity: 0;
+            }
+    
+            :nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+    
+            :nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    
+    
+    }
+
+    .bar {
+        background-color: $white;
+        display: block;
+        width: 25px;
+        height: 2px;
+        margin: 5px auto;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    
     }
 }

@@ -33,6 +33,10 @@ $z-fixed: 100;
 $z-modal: 1000;
 
 $breakpoint-desktop: 1280px;
-$breakpoint-tablet: 1000px;
-$breakpoint-mini-tablet: 600px;
-$breakpoint-mobile: 400px;
+$breakpoint-desktop-small: 1000px;
+
+$breakpoint-tablet: 800px;
+$breakpoint-tablet-small: 600px;
+
+$breakpoint-mobile: 410px;
+$breakpoint-mobile-small: 320px;

@@ -30,6 +30,13 @@
         top: 0;
         width: 100%;
 
+        @include desktop {
+            background-position: 60.5%;
+        }
+
+        @include tablet {
+            background-position: 65%;
+        }
     }
 
     .home-content {

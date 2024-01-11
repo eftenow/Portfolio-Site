@@ -1,5 +1,9 @@
 .main-wrapper {
     margin-left: 260px;
+
+    @include desktop-small {
+        margin-left: 0;
+    }
 }
 
 .section {

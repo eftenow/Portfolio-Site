@@ -48,7 +48,7 @@ const Portfolio = () => {
                         <div className="slide-content">
                             <Slider {...sliderSettings}>
                                 {portfolioData.map(projectData => (
-                                    <div className="card-wrapper">
+                                    <div className="card-wrapper" key={projectData.name}>
                                         <PortfolioItem {...projectData} />
                                     </div>
                                 ))}

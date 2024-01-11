@@ -1,6 +1,6 @@
 
-export const Navigation = ({currentSection}) => {
-
+export const Navigation = ({ currentSection }) => {
+    const toggleNavigation = () => {};
 
     return (
         <header className="header left-section">
@@ -12,7 +12,7 @@ export const Navigation = ({currentSection}) => {
 
                 <div className="side-nav-mid">
                     <ul className="navbar-list">
-                        <li  className="nav-item"><a className={`nav-link ${currentSection == "home" && "text-primary"}`} href="#home"><i className="uil uil-estate"></i> Home</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "home" && "text-primary"}`} href="#home"><i className="uil uil-estate"></i> Home</a></li>
                         <li className="nav-item"><a className={`nav-link ${currentSection == "about" && "text-primary"}`} href="#about"><i className="uil uil-user"></i> About</a></li>
                         <li className="nav-item"><a className={`nav-link ${currentSection == "services" && "text-primary"}`} href="#services"><i className="fa-regular fa-folder"></i> Services</a></li>
                         <li className="nav-item"><a className={`nav-link ${currentSection == "experience" && "text-primary"}`} href="#experience"><i className="uil uil-file-alt"></i> Experience</a></li>
@@ -28,10 +28,16 @@ export const Navigation = ({currentSection}) => {
                     <li><a href="#" className="media-icon facebook"><i className="fa-brands fa-facebook"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/tsvetan-eftenov/" className="media-icon linkedin"><i className="uil uil-linkedin"></i></a></li>
                     <li><a href="mailto:tsvetan.eftenov@gmail.com" className="media-icon message">
-                            <i className="fa fa-envelope"></i>
-                        </a></li>
+                        <i className="fa fa-envelope"></i>
+                    </a></li>
 
                 </ul>
+                <button className="burger-menu-button" onClick={toggleNavigation} >
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+
+                </button>
             </nav>
         </header>
     )
