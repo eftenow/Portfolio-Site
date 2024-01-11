@@ -1,6 +1,13 @@
 
 export const Navigation = ({ currentSection }) => {
-    const toggleNavigation = () => {};
+    function toggleNavigation() {
+        const button = document.querySelector('.burger-menu-button');
+        const navigation = document.querySelector('.side-nav-mid');
+
+        button.classList.toggle('close-nav');
+        navigation.classList.toggle('active-mobile-nav');
+    }
+
 
     return (
         <header className="header left-section">

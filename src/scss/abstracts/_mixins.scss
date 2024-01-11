@@ -10,7 +10,7 @@
     @media (max-width: $breakpoint-tablet) { @content; }
   }
   
-  @mixin mini-tablet {
+  @mixin tablet-small {
     @media (max-width: $breakpoint-tablet-small) { @content; }
   }
   
