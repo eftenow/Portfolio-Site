@@ -37,4 +37,9 @@ p{
   line-height: 1.8;
   margin-bottom: 1rem;
   color: $paragraph-clr;
+
+  @include mobile {
+    font-size: $fs-medium;
+    line-height: 1.7;
+  }
 }

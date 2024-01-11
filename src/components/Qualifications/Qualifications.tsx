@@ -70,7 +70,7 @@ const Qualifications = () => {
                         </div>
 
                         <article>
-                            <h4>Applied linguistics with English and IT</h4>
+                            <h4>Linguistics with English and IT</h4>
                             <p>Veliko Tarnovo University</p>
                             <div className="qualification-calendar">
                                 <i className="fa-regular fa-calendar"></i>

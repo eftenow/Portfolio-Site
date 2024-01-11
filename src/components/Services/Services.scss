@@ -2,10 +2,30 @@
     display: flex;
     margin-bottom: 2.5rem;
 
+    @include tablet {
+        margin-bottom: 1.25rem;
+    }
+
+    @include mobile {
+        padding: 0;
+    }
+
     h3 {
         margin-bottom: 0.5rem;
         font-size: $fs-large;
         font-weight: $fw-regular;
+
+        @include mobile {
+            font-size: $fs-medium;
+        }
+    }
+
+    p{
+        font-size: $fs-medium;
+
+        @include mobile {
+            font-size: $fs-small !important;
+        }
     }
 
 

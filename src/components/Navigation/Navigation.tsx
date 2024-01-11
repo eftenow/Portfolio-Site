@@ -1,11 +1,17 @@
-
 export const Navigation = ({ currentSection }) => {
     function toggleNavigation() {
-        const button = document.querySelector('.burger-menu-button');
-        const navigation = document.querySelector('.side-nav-mid');
+        const button = document.querySelector('.burger-menu-button') as HTMLButtonElement;
+        const navigation = document.querySelector('.side-nav-mid') as HTMLUListElement;
 
         button.classList.toggle('close-nav');
         navigation.classList.toggle('active-mobile-nav');
+    }
+
+    function handleNavLinkClick() {
+        const navigation = document.querySelector('.side-nav-mid') as HTMLUListElement;
+        if (navigation.classList.contains('active-mobile-nav')) {
+            navigation.classList.remove('active-mobile-nav');
+        }
     }
 
 
@@ -19,13 +25,13 @@ export const Navigation = ({ currentSection }) => {
 
                 <div className="side-nav-mid">
                     <ul className="navbar-list">
-                        <li className="nav-item"><a className={`nav-link ${currentSection == "home" && "text-primary"}`} href="#home"><i className="uil uil-estate"></i> Home</a></li>
-                        <li className="nav-item"><a className={`nav-link ${currentSection == "about" && "text-primary"}`} href="#about"><i className="uil uil-user"></i> About</a></li>
-                        <li className="nav-item"><a className={`nav-link ${currentSection == "services" && "text-primary"}`} href="#services"><i className="fa-regular fa-folder"></i> Services</a></li>
-                        <li className="nav-item"><a className={`nav-link ${currentSection == "experience" && "text-primary"}`} href="#experience"><i className="uil uil-file-alt"></i> Experience</a></li>
-                        <li className="nav-item"><a className={`nav-link ${currentSection == "tools" && "text-primary"}`} href="#tools"><i className="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
-                        <li className="nav-item"><a className={`nav-link ${currentSection == "portfolio" && "text-primary"}`} href="#portfolio"><i className="fa-regular fa-address-card"></i> Portfolio</a></li>
-                        <li className="nav-item"><a className={`nav-link ${currentSection == "contact" && "text-primary"}`} href="#contact"><i className="fa-regular fa-envelope"></i> Contact</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "home" && "text-primary"}`} href="#home" onClick={handleNavLinkClick}><i className="uil uil-estate"></i> Home</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "about" && "text-primary"}`} href="#about" onClick={handleNavLinkClick}><i className="uil uil-user"></i> About</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "services" && "text-primary"}`} href="#services" onClick={handleNavLinkClick}><i className="fa-regular fa-folder"></i> Services</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "experience" && "text-primary"}`} href="#experience" onClick={handleNavLinkClick}><i className="uil uil-file-alt"></i> Experience</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "tools" && "text-primary"}`} href="#tools" onClick={handleNavLinkClick}><i className="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "portfolio" && "text-primary"}`} href="#portfolio" onClick={handleNavLinkClick}><i className="fa-regular fa-address-card"></i> Portfolio</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection == "contact" && "text-primary"}`} href="#contact" onClick={handleNavLinkClick}><i className="fa-regular fa-envelope"></i> Contact</a></li>
                     </ul>
                 </div>
 

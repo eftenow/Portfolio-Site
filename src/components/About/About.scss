@@ -4,11 +4,20 @@
 
     p {
         margin-bottom: 1rem;
+
+        @include mobile {
+            font-size: $fs-small;
+        }
     }
     
     h2{
         font-size: $fs-x-large;
         margin-bottom: 1rem;
+
+        @include mobile {
+            font-size: $fs-large;
+            margin-top: -0.75rem;
+        }
     }
    
 }
@@ -41,6 +50,12 @@
 
     &:span{
         font-weight: $fw-bold;
+    }
+
+    @include mobile {
+        *{
+            font-size: $fs-small;
+        }
     }
     
 }
