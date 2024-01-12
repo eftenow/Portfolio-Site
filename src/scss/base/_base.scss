@@ -42,4 +42,9 @@ p{
     font-size: $fs-medium;
     line-height: 1.7;
   }
+
+  @include mobile-small {
+    font-size: $fs-medium;
+    line-height: 1.6;
+  }
 }

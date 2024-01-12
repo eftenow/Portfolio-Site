@@ -13,6 +13,7 @@
 
     @media (max-width: 575.98px) {
         padding: 2.5rem 0;
+        margin-left: -0.25rem;
     }
 }
 
@@ -140,8 +141,19 @@
     @include mobile {
         max-width: 95vw;
         margin-top: -2rem;
+        margin-bottom: 2rem;
     }
 
+    @include mobile-small {
+        padding: 0 0.75rem;
+        line-height: 1.6;
+        
+        span{
+            font-size: $fs-medium;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+    }
 
     span{
         display: block;

@@ -21,8 +21,8 @@ const Qualifications = () => {
                     </h3>
                 </header>
 
-                <p className="introduction-paragraph">
-                    <span>Discover my journey</span> This section unveils the landmarks of my education and career, every step has been a crucial chapter in my story. Join me in exploring the key experiences that have sculpted my journey in the world of technology.
+                <p className="introduction-paragraph qual-paragraph">
+                    <span>Discover my journey</span> This section unveils the landmarks of my education and career. Explore the key experiences that have sculpted my journey in the tech world.
                 </p>
 
 
