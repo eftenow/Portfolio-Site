@@ -12,12 +12,36 @@
     justify-content: center;
     margin: 1rem;
 
+    @include tablet-small {
+        margin: 0 auto;
+        padding: 0;
+    }
+
     .skill-box{
         max-width: 21%;
         margin: 0.75rem;
         padding: 1rem;
         padding-top: 0.75rem;
         border-radius: 0.5rem;
+
+        @include tablet {
+            max-width: 30%;
+            margin: 0.75rem 0.5rem;
+        }
+
+        @include tablet-small {
+            max-width: 45.2%;
+            padding: 0.75rem;
+        }
+
+        @include mobile {
+            max-width: 67.5%;
+            padding: 1.5rem;
+        }
+
+        @include mobile-small {
+            max-width: 80%;
+        }
 
         i{
             font-size: $fs-xxx-large;
@@ -29,6 +53,9 @@
         h4{
             font-size: 1.1rem;
             margin-bottom: 0.25rem;
+            @include tablet-small {
+                font-size: $fs-medium;
+        }
         }
         
         p{
