@@ -29,6 +29,13 @@ footer {
             text-align: center;
             width: 44px;
             transition: all .75s ease 0s;
+
+            @include mobile{
+                height: 38px;
+                width: 38px;
+                font-size: $fs-large;
+                line-height: 36px;
+            }
         }
     }
 
