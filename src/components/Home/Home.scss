@@ -93,6 +93,7 @@
 
             @include mobile {
                 font-size: $fs-larger;
+                margin: 0.75rem;
             }
         }
 
@@ -106,6 +107,7 @@
             }
             @include mobile {
                 font-size: $fs-large;
+                margin-top: 0.25rem;
             }
         }
 
@@ -115,12 +117,17 @@
 
             @include mobile {
                 font-size: $fs-medium;
+                margin-bottom: 0.5rem;
             }
         }
 
         a{
             border: 2px solid;
             margin-top: 1rem;
+
+            @include mobile{
+                margin-top: 0.5rem;
+            }
         }
 
 
