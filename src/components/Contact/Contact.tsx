@@ -1,11 +1,61 @@
-import { useForm } from '@formspree/react';
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+
+import SECRETS from '../../secrets';
+
+interface FormData {
+    from_name: string;
+    email: string;
+    message: string;
+  }
+  
+  interface FormErrors {
+    from_name?: string;
+    email?: string;
+    message?: string;
+  }
 
 const Contact = () => {
-    const [state, handleSubmit] = useForm("xdoqkgyz");
+    const [formData, setFormData] = useState<FormData>({
+        from_name: '',
+        email: '',
+        message: ''
+    });
+    const [showNotification, setShowNotification] = useState(false);
+    const [errors, setErrors] = useState<FormErrors>({});
 
-    if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
-    }
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const validateForm = () => {
+        const tempErrors: FormErrors = {};
+        if (!formData.from_name) tempErrors.from_name = 'Name is required';
+        if (!formData.email) {
+            tempErrors.email = 'Email is required';
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            tempErrors.email = 'Email is not valid';
+        }
+        if (!formData.message) tempErrors.message = 'Message is required';
+
+        setErrors(tempErrors);
+        return Object.keys(tempErrors).length === 0;
+    };
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (!validateForm()) return;
+
+        emailjs.sendForm(SECRETS.EMAILJS_SERVICE_ID, SECRETS.EMAILJS_TEMPLATE_ID, e.target as HTMLFormElement, SECRETS.EMAILJS_USER_ID)
+            .then(() => {
+                setShowNotification(true);
+                setFormData({ from_name: '', email: '', message: '' });
+                setTimeout(() => setShowNotification(false), 3000);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <section id='contact' className='section bg-dark-2'>
@@ -44,16 +94,46 @@ const Contact = () => {
                     </ul>
                     <div className='form-wrapper'>
                         <h3>Message me</h3>
-                        <form onSubmit={handleSubmit} className='form-dark' id='contact-form'>
-                            <input name='username' type="text" className='form-field' placeholder='Name' />
-                            <input name='email' type="email" className='form-field' placeholder='Email' />
-                            <textarea name='message' className='form-field' placeholder='Message'></textarea>
+                        <form onSubmit={sendEmail} className='form-dark' id='contact-form'>
+                            <input
+                                name='from_name'
+                                type="text"
+                                className='form-field'
+                                placeholder='Name'
+                                value={formData.from_name}
+                                onChange={handleInputChange}
+                            />
+                            {errors.from_name && <p className="error">{errors.from_name}</p>}
 
-                            <button type='submit' className='btn btn-primary' disabled={state.submitting}>Send</button>
+                            <input
+                                name='email'
+                                type="text"
+                                className='form-field'
+                                placeholder='Email'
+                                value={formData.email}
+                                onChange={handleInputChange}
+                            />
+                            {errors.email && <p className="error">{errors.email}</p>}
+
+                            <textarea
+                                name='message'
+                                className='form-field'
+                                placeholder='Message'
+                                value={formData.message}
+                                onChange={handleInputChange}
+                            ></textarea>
+                            {errors.message && <p className="error">{errors.message}</p>}
+
+                            <button type='submit' className='btn btn-primary'>Send</button>
                         </form>
                     </div>
                 </section>
             </div>
+            {showNotification && (
+                <div className="notification-modal">
+                    <p>Thank you for your message!</p>
+                </div>
+            )}
         </section>
     )
 }
