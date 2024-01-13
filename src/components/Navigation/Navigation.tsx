@@ -1,16 +1,18 @@
 export const Navigation = ({ currentSection }) => {
     function toggleNavigation() {
-        const button = document.querySelector('.burger-menu-button') as HTMLButtonElement;
+        const burgerBtn = document.querySelector('.burger-menu-button') as HTMLButtonElement;
         const navigation = document.querySelector('.side-nav-mid') as HTMLUListElement;
 
-        button.classList.toggle('close-nav');
+        burgerBtn.classList.toggle('close-nav');
         navigation.classList.toggle('active-mobile-nav');
     }
 
     function handleNavLinkClick() {
+        const burgerBtn = document.querySelector('.burger-menu-button') as HTMLButtonElement;
         const navigation = document.querySelector('.side-nav-mid') as HTMLUListElement;
         if (navigation.classList.contains('active-mobile-nav')) {
             navigation.classList.remove('active-mobile-nav');
+            burgerBtn.classList.remove('close-nav');
         }
     }
 
