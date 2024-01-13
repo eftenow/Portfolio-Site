@@ -1,4 +1,5 @@
 .contact-me-content{
+    position: relative;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -102,19 +103,6 @@
         }
     }
 
-    .notification-modal {
-        position: fixed; /* Fixed position */
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); /* Center the div */
-        z-index: 100; /* Make sure it's on top */
-        background-color: white;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        text-align: center;
-    }
-
     .error{
         color: #bc2020;
         font-weight: $fw-bold;
@@ -122,4 +110,39 @@
         margin: 0.5rem;
         margin-bottom: 0.25rem;
     }
+}
+
+.notification-modal {
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: $primary-clr; 
+    border: 1px solid $heading-font-color;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100; 
+    font-size: $fs-medium;
+    text-align: center;
+
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s; 
+
+    @include desktop-small{
+        left: 50%;
+    }
+
+    h3{
+        color: $white;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }

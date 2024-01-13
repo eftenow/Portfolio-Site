@@ -131,7 +131,7 @@ const Contact = () => {
             </div>
             {showNotification && (
                 <div className="notification-modal">
-                    <p>Thank you for your message!</p>
+                    <h3>Thank you for your message!</h3>
                 </div>
             )}
         </section>
