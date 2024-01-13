@@ -9,7 +9,7 @@ import portfolioData from "./../../data/portfolioData.json";
 const Portfolio = () => {
 
     const sliderSettings = {
-        accessibility:true,
+        accessibility: true,
         dots: true,
         infinite: true,
         speed: 500,
@@ -44,6 +44,9 @@ const Portfolio = () => {
                 </header>
 
                 <section className="row portfolio-section">
+                    <p className="introduction-paragraph">
+                        <span>Explore My Digital Creations</span> Dive into my journey through a collection of projects that have been crucial in sharpening my skills and knowledge.
+                    </p>
                     <div className="slide-container">
                         <div className="slide-content">
                             <Slider {...sliderSettings}>
@@ -56,6 +59,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </section>
+
             </div >
         </section >
     )
