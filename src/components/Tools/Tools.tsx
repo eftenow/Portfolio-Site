@@ -16,8 +16,8 @@ const Tools = () => {
                 <section className="row skills-section">
                     <p className="introduction-paragraph"><span>{toolsData.introTitle}</span> {toolsData.introParagraph}</p>
                     <ul className="skill-box-wrapper row">
-                        {toolsData.cards.map(card => (
-                            <li className="skill-box bg-dark">
+                        {toolsData.cards.map((card, index) => (
+                            <li key={index} className="skill-box bg-dark">
                                 <i className={card.icon}></i>
                                 <h4>{card.title}</h4>
                                 <p>{card.description}</p>

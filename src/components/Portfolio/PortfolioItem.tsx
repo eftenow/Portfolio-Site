@@ -10,7 +10,7 @@ interface PortfolioListItem {
     "visit": string,
 }
 
-const PortfolioItem = ({ name, img, logo, link, description, technologies, visit } :PortfolioListItem) => {
+const PortfolioItem = ({ name, img, link, description, visit } :PortfolioListItem) => {
     return (
         <div className="card">
             <img src={img} alt="" className="card-img" />

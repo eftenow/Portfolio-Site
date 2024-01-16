@@ -1,4 +1,4 @@
-export const Navigation = ({ currentSection }) => {
+export const Navigation = ({ currentSection }: { currentSection: string }) => {
     function toggleNavigation() {
         const burgerBtn = document.querySelector('.burger-menu-button') as HTMLButtonElement;
         const navigation = document.querySelector('.side-nav-mid') as HTMLUListElement;
@@ -27,7 +27,7 @@ export const Navigation = ({ currentSection }) => {
 
                 <div className="side-nav-mid">
                     <ul className="navbar-list">
-                        <li className="nav-item"><a className={`nav-link ${currentSection == "home" && "text-primary"}`} href="#home" onClick={handleNavLinkClick}><i className="uil uil-estate"></i> Home</a></li>
+                        <li className="nav-item"><a className={`nav-link ${currentSection === "home" ? "text-primary" : ""}`} href="#home" onClick={handleNavLinkClick}><i className="uil uil-estate"></i> Home</a></li>
                         <li className="nav-item"><a className={`nav-link ${currentSection == "about" && "text-primary"}`} href="#about" onClick={handleNavLinkClick}><i className="uil uil-user"></i> About</a></li>
                         <li className="nav-item"><a className={`nav-link ${currentSection == "services" && "text-primary"}`} href="#services" onClick={handleNavLinkClick}><i className="fa-regular fa-folder"></i> Services</a></li>
                         <li className="nav-item"><a className={`nav-link ${currentSection == "experience" && "text-primary"}`} href="#experience" onClick={handleNavLinkClick}><i className="uil uil-file-alt"></i> Experience</a></li>

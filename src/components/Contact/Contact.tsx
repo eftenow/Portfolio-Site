@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-import SECRETS from '../../secrets';
 import titles from "./../../data/titles.json";
 import buttons from "./../../data/buttons.json";
 
@@ -9,13 +8,13 @@ interface FormData {
     from_name: string;
     email: string;
     message: string;
-  }
-  
-  interface FormErrors {
+}
+
+interface FormErrors {
     from_name?: string;
     email?: string;
     message?: string;
-  }
+}
 
 const Contact = () => {
     const [formData, setFormData] = useState<FormData>({
@@ -43,13 +42,16 @@ const Contact = () => {
         setErrors(tempErrors);
         return Object.keys(tempErrors).length === 0;
     };
+    const service = "service_rwiv4f3";
+    const template = "template_ejor0ah";
+    const user = "p68NkFx3fafU8k_Sx";
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         if (!validateForm()) return;
 
-        emailjs.sendForm(SECRETS.EMAILJS_SERVICE_ID, SECRETS.EMAILJS_TEMPLATE_ID, e.target as HTMLFormElement, SECRETS.EMAILJS_USER_ID)
+        emailjs.sendForm(service, template, e.target as HTMLFormElement, user)
             .then(() => {
                 setShowNotification(true);
                 setFormData({ from_name: '', email: '', message: '' });
