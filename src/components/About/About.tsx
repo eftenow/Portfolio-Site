@@ -1,12 +1,12 @@
-import React from 'react'
+import titles from "./../../data/titles.json";
 
 const About = () => {
   return (
     <section id='about' className='section bg-dark-1'>
       <div className='container'>
         <header className='header-wrapper'>
-          <h2 className='section-background-header'>ABOUT ME</h2>
-          <h3 className='section-header'>Who am I?
+          <h2 className='section-background-header'>{titles.about.title}</h2>
+          <h3 className='section-header'>{titles.about.subtitle}
             <span className='heading-separator'></span>
           </h3>
         </header>

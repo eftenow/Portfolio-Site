@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import PortfolioItem from "./PortfolioItem";
 import portfolioData from "./../../data/portfolioData.json";
+import titles from "./../../data/titles.json";
 
 const Portfolio = () => {
 
@@ -37,8 +38,8 @@ const Portfolio = () => {
         <section id='portfolio' className='section bg-dark-1'>
             <div className='container'>
                 <header className='header-wrapper'>
-                    <h2 className='section-background-header'>PORTFOLIO</h2>
-                    <h3 className='section-header'>My Work
+                    <h2 className='section-background-header'>{titles.portfolio.title}</h2>
+                    <h3 className='section-header'>{titles.portfolio.subtitle}
                         <span className='heading-separator'></span>
                     </h3>
                 </header>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 import SECRETS from '../../secrets';
+import titles from "./../../data/titles.json";
 
 interface FormData {
     from_name: string;
@@ -61,8 +62,8 @@ const Contact = () => {
         <section id='contact' className='section bg-dark-2'>
             <div className='container'>
                 <header className='header-wrapper'>
-                    <h2 className='section-background-header'>CONTACT</h2>
-                    <h3 className='section-header'>Get In Touch
+                    <h2 className='section-background-header'>{titles.contact.title}</h2>
+                    <h3 className='section-header'>{titles.contact.subtitle}
                         <span className='heading-separator'></span>
                     </h3>
                 </header>

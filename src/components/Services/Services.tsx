@@ -1,10 +1,12 @@
+import titles from "./../../data/titles.json";
+
 const Services = () => {
     return (
         <section id='services' className='section bg-dark-2'>
             <div className="container">
                 <header className='header-wrapper'>
-                    <h2 className='section-background-header'>EXPERTISE</h2>
-                    <h3 className='section-header'>What I Do?
+                    <h2 className='section-background-header'>{titles.services.title}</h2>
+                    <h3 className='section-header'>{titles.services.subtitle}
                         <span className='heading-separator'></span>
                     </h3>
                 </header>

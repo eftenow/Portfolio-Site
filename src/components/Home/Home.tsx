@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+import titles from "./../../data/titles.json";
+
+
 const DELAY_BEFORE_TYPING = 800;
 const DELAY_BEFORE_DELETING = 1200;
 const INTERVAL_DELAY = 80;
@@ -51,10 +54,10 @@ export const Home = () => {
                 <div className="home-background"></div>
                 <div className="home-content">
                     <section className="home-text">
-                        <h2>Welcome</h2>
-                        <h1>I am {currentMessage}<span className="cursor">|</span></h1>
-                        <p>based in Veliko Tarnovo, Bulgaria</p>
-                        <a href="#contact" className="btn">Contact Me</a>
+                        <h2>{titles.home.title}</h2>
+                        <h1>{titles.home.subtitle} {currentMessage}<span className="cursor">|</span></h1>
+                        <p>{titles.home.subtitle2}</p>
+                        <a href="#contact" className="btn">{titles.home.button}</a>
                     </section>
                 </div>
             </div>

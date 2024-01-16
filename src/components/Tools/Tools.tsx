@@ -1,10 +1,12 @@
+import titles from "./../../data/titles.json";
+
 const Tools = () => {
     return (
         <section id='tools' className='section bg-dark-2'>
             <div className='container'>
                 <header className='header-wrapper'>
-                    <h2 className='section-background-header'>TOOLS</h2>
-                    <h3 className='section-header'>My Skills
+                    <h2 className='section-background-header'>{titles.tools.title}</h2>
+                    <h3 className='section-header'>{titles.tools.subtitle}
                         <span className='heading-separator'></span>
                     </h3>
                 </header>

@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import titles from "./../../data/titles.json";
+
 const Qualifications = () => {
     const [activeSection, setActiveSection] = useState('education');
 
@@ -15,8 +17,8 @@ const Qualifications = () => {
         <section id='experience' className='section bg-dark-1'>
             <div className='container'>
                 <header className='header-wrapper'>
-                    <h2 className='section-background-header'>EXPERIENCE</h2>
-                    <h3 className='section-header'>My Journey
+                    <h2 className='section-background-header'>{titles.about.title}</h2>
+                    <h3 className='section-header'>{titles.about.title}
                         <span className='heading-separator'></span>
                     </h3>
                 </header>
