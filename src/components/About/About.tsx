@@ -1,4 +1,5 @@
 import titles from "./../../data/titles.json";
+import buttons from "./../../data/buttons.json";
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
               <li className='info-field'><span>Age: </span>26</li>
               <li className='info-field'><span>From: </span>Veliko Tarnovo, Bulgaria</li>
             </ul>
-            <a href="../../../public/files/tsvetan_eftenov_resume.pdf" className='btn btn-primary' rel="noreferrer">Download CV</a>
+            <a href="../../../public/files/tsvetan_eftenov_resume.pdf" className='btn btn-primary' rel="noreferrer">{buttons.download}</a>
           </section>
         </article>
       </div>

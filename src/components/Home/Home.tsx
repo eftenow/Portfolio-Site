@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import titles from "./../../data/titles.json";
+import buttons from "./../../data/buttons.json";
 
 
 const DELAY_BEFORE_TYPING = 800;
@@ -57,7 +58,7 @@ export const Home = () => {
                         <h2>{titles.home.title}</h2>
                         <h1>{titles.home.subtitle} {currentMessage}<span className="cursor">|</span></h1>
                         <p>{titles.home.subtitle2}</p>
-                        <a href="#contact" className="btn">{titles.home.button}</a>
+                        <a href="#contact" className="btn">{buttons.contact}</a>
                     </section>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import titles from "./../../data/titles.json";
+import buttons from "./../../data/buttons.json";
 
 const Qualifications = () => {
     const [activeSection, setActiveSection] = useState('education');
@@ -119,9 +120,9 @@ const Qualifications = () => {
                 </section>
 
                 <div className="cv-btn-wrapper">
-                <a className="btn btn-outline-secondary" href="../../../public/files/tsvetan_eftenov_resume.pdf" rel="noreferrer">
-                    Download CV <i className="fa-solid fa-download"></i>
-                </a>
+                    <a className="btn btn-outline-secondary" href="../../../public/files/tsvetan_eftenov_resume.pdf" rel="noreferrer">
+                        {buttons.download} <i className="fa-solid fa-download"></i>
+                    </a>
                 </div>
             </div>
 

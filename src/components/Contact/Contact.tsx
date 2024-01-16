@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 
 import SECRETS from '../../secrets';
 import titles from "./../../data/titles.json";
+import buttons from "./../../data/buttons.json";
 
 interface FormData {
     from_name: string;
@@ -125,7 +126,7 @@ const Contact = () => {
                             ></textarea>
                             {errors.message && <p className="error">{errors.message}</p>}
 
-                            <button type='submit' className='btn btn-primary'>Send</button>
+                            <button type='submit' className='btn btn-primary'>{buttons.send}</button>
                         </form>
                     </div>
                 </section>

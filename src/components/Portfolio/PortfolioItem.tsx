@@ -1,3 +1,5 @@
+import buttons from "./../../data/buttons.json";
+
 interface PortfolioListItem {
     "name": string,
     "img": string,
@@ -17,7 +19,7 @@ const PortfolioItem = ({ name, img, logo, link, description, technologies, visit
                 <p className="project-descritpion">{description}</p>
                 <p className='project-visit'>{visit}</p>
 
-                <a href={link} className="btn-primary btn visit-btn">Visit</a>
+                <a href={link} className="btn-primary btn visit-btn">{buttons.visit}</a>
             </div>
         </div>
     )
