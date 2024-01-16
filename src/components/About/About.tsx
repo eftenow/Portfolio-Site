@@ -1,7 +1,26 @@
+import about from "./../../data/about.json";
 import titles from "./../../data/titles.json";
 import buttons from "./../../data/buttons.json";
 
 const About = () => {
+  const birthDate = parseDate(about.data.ageValue);
+  const currentAge = calculateAge(birthDate);
+
+  function parseDate(dateStr: string): Date {
+    const parts = dateStr.split('.');
+    return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+  }
+
+  function calculateAge(birthDate: Date): number {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  }
+
   return (
     <section id='about' className='section bg-dark-1'>
       <div className='container'>
@@ -14,18 +33,18 @@ const About = () => {
         <article className='row about-me-content'>
           <article className='about-me-text primary-column'>
             <h2>I'm <span className='text-primary '>Tsvetan Eftenov,</span> a Web Developer</h2>
-            <p>In early 2022, I started my coding adventure and it's been a one-way journey ever since. Initially, I got into Python, driven by curiosity and passion I gradually expanded into JavaScript and front-end development as well.</p>
-            <p>Dive into the vibrant world of Full-Stack Development with me, where coding isn't just typing on a keyboard, but a quest for innovation! Armed with NodeJS, Python, and React, I explore the digital world, reshaping complex challenges into engaging riddles.</p>
+            <p>{about.paragraph1}</p>
+            <p>{about.paragraph2}</p>
           </article>
 
           <section className='about-me-info column'>
             <ul className='info-fields'>
-              <li className='info-field'><span>Name: </span>Tsvetan Eftenov</li>
-              <li className='info-field'><span>Email: </span><span className='text-primary'>tsvetan.eftenov@gmail.com</span></li>
-              <li className='info-field'><span>Age: </span>26</li>
-              <li className='info-field'><span>From: </span>Veliko Tarnovo, Bulgaria</li>
+              <li className='info-field'><span>Name: </span>{about.data.nameValue}</li>
+              <li className='info-field'><span>Email: </span><span className='text-primary'>{about.data.emailValue}</span></li>
+              <li className='info-field'><span>Age: </span>{currentAge}</li>
+              <li className='info-field'><span>From: </span>{about.data.fromValue}</li>
             </ul>
-            <a href="../../../public/files/tsvetan_eftenov_resume.pdf" className='btn btn-primary' rel="noreferrer">{buttons.download}</a>
+            <a href={buttons.cv} className='btn btn-primary' rel="noreferrer" target="_blank">{buttons.download}</a>
           </section>
         </article>
       </div>

@@ -120,7 +120,7 @@ const Qualifications = () => {
                 </section>
 
                 <div className="cv-btn-wrapper">
-                    <a className="btn btn-outline-secondary" href="../../../public/files/tsvetan_eftenov_resume.pdf" rel="noreferrer">
+                    <a href={buttons.cv} className='btn btn-primary' rel="noreferrer" target="_blank">
                         {buttons.download} <i className="fa-solid fa-download"></i>
                     </a>
                 </div>

@@ -2,5 +2,6 @@
     "contact": "Contact me",
     "download": "Download CV",
     "visit": "Visit",
-    "send": "Send"
+    "send": "Send",
+    "cv": "../../../public/files/tsvetan_eftenov_resume.pdf"
 }
