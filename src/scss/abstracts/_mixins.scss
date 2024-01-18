@@ -21,8 +21,4 @@
   @mixin mobile-small {
     @media (max-width: $breakpoint-mobile-small) { @content; }
   }
-  // $breakpoint-desktop: 1280px;
-// $breakpoint-desktop-small: 1000px;
-// $breakpoint-tablet: 800px;
-// $breakpoint-tablet-small: 600px;
-// $breakpoint-mobile: 400px;
+

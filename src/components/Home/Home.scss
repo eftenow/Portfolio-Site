@@ -75,9 +75,14 @@
         align-items: center;
         padding: 3.5rem 0 3rem 3rem;
 
+        @include tablet-small {
+            padding: 3.5rem 0 3rem 0.5rem;
+            margin-left: auto;
+        }
+
         @include mobile {
             padding: 0;
-            margin-top: 4.5rem;
+            margin-top: 10.5vh;
             margin-left: auto;
         }
 
@@ -107,7 +112,7 @@
             }
             @include mobile {
                 font-size: $fs-large;
-                margin-top: 0.25rem;
+                margin-top: 0.35rem;
             }
         }
 
@@ -126,7 +131,7 @@
             margin-top: 1rem;
 
             @include mobile{
-                margin-top: 0.5rem;
+                margin-top: 0.75rem;
             }
         }
 
