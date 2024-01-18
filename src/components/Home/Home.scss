@@ -94,11 +94,11 @@
 
         h1 {
             font-size: $fs-xx-large;
-            margin: 1rem 0;
+            margin: 0.75rem 0;
 
             @include mobile {
                 font-size: $fs-larger;
-                margin: 0.75rem;
+                margin: 0.8rem;
             }
         }
 
@@ -129,9 +129,10 @@
         a{
             border: 2px solid;
             margin-top: 1rem;
-
-            @include mobile{
-                margin-top: 0.75rem;
+            
+            @include tablet-small{
+                margin-top: 0.5rem;
+                padding: 0.5rem 1.5rem;
             }
         }
 

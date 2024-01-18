@@ -13,7 +13,7 @@
         padding: 1.5rem;
     }
 
-    @include tablet-small{
+    @include tablet-small {
         margin-top: 1rem;
     }
 }
@@ -49,6 +49,7 @@
         width: 52.5%;
         border-radius: 0.5rem;
         margin-left: 1rem;
+
         @include desktop {
             width: 57.5%;
         }
@@ -83,7 +84,7 @@
         padding: 1rem;
     }
 
-    @include mobile{
+    @include mobile {
         margin-left: 0.5rem;
         margin: 0;
     }
@@ -97,7 +98,7 @@
             line-height: 1.6;
         }
 
-        @include mobile{
+        @include mobile {
             text-align: center;
         }
     }
@@ -133,26 +134,47 @@
     color: $white;
 }
 
-.project-description {
+.project-descritpion {
     font-size: 14px;
-    text-align: center;
+    
+}
+@include tablet{
+    .project-descritpion:after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 1.5px;
+        background-color: $paragraph-clr;
+        margin: 1rem auto;
+    }
+}
+
+@include tablet {
+    p{
+        margin:  0.25rem auto;
+    }
 }
 
 .visit-btn {
     padding: 0.75rem 2.25rem;
     align-self: center;
 
-    @include mobile{
+    @include tablet{
+        margin-top: 1.25rem;
+        margin-bottom: -1.25rem;
+    }
+
+    @include mobile {
         padding: 0.5rem 1.75rem;
         margin-top: 0.75rem;
-        margin-bottom: -0.75rem;
+        margin-bottom: -0.5rem;
     }
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
     top: 60%;
-    z-index: 1000;
-    transition: all 0.3s ease;
+    z-index: 99;
 }
 
 .slick-prev {
@@ -163,23 +185,24 @@
     right: 1.75rem;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
     font-family: 'slick';
     color: $primary-clr;
     font-size: 40px;
     transition: all 0.6s ease;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    z-index: 1000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 99;
 
-    @include desktop{
+    @include desktop {
         font-size: 36px;
     }
 
-    @include tablet{
+    @include tablet {
         font-size: 32px;
     }
 
-    @include mobile{
+    @include mobile {
         font-size: 28px;
     }
 }
@@ -200,6 +223,11 @@
 }
 
 .slick-dots {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -0.75rem;
+
     li {
         margin: 0 5px;
 
@@ -227,13 +255,6 @@
     }
 }
 
-.slick-dots {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: -0.75rem;
-}
-
 .slick-dots li button::after {
     content: '';
     display: block;
@@ -253,3 +274,4 @@
     width: 0.75rem;
     height: 0.75rem;
 }
+
