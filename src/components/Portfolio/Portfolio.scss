@@ -173,8 +173,11 @@
 
 .slick-prev,
 .slick-next {
-    top: 60%;
-    z-index: 99;
+    top: 59%;
+
+    @include mobile{
+        top: 54.5%;
+    }
 }
 
 .slick-prev {
@@ -226,7 +229,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: -0.75rem;
+    margin-top: -0.9rem;
 
     li {
         margin: 0 5px;
