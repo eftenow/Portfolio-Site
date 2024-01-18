@@ -25,31 +25,31 @@ const Footer = () => {
 
                 <li ref={el => iconsRef.current[0] = el} className='media-link github'>
                     <div className='animate_fade'>
-                        <a href="https://github.com/eftenow" className="media-icon"><i className="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/eftenow" className="media-icon" target="_blank"><i className="fa-brands fa-github"></i></a>
                     </div>
                 </li>
                 <li ref={el => iconsRef.current[1] = el} className='media-link gitlab'>
                     <div className='animate_fade'>
-                        <a href="https://gitlab.com/eftenow" className="media-icon"><i className="fa-brands fa-gitlab"></i></a>
+                        <a href="https://gitlab.com/eftenow" className="media-icon" target="_blank"><i className="fa-brands fa-gitlab"></i></a>
                     </div>
                 </li>
 
                 <li ref={el => iconsRef.current[2] = el} className='media-link facebook'>
                     <div className='animate_fade'>
-                        <a href="#" className="media-icon"><i className="fa-brands fa-facebook"></i></a>
+                        <a href="#" className="media-icon" target="_blank"><i className="fa-brands fa-facebook"></i></a>
                     </div>
                 </li>
 
 
                 <li ref={el => iconsRef.current[3] = el} className='media-link linkedin' >
                     <div className='animate_fade'>
-                        <a href="https://www.linkedin.com/in/tsvetan-eftenov/" className="media-icon"><i className="uil uil-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/tsvetan-eftenov/" className="media-icon" target="_blank"><i className="uil uil-linkedin"></i></a>
                     </div>
                 </li>
 
                 <li ref={el => iconsRef.current[4] = el} className='media-link message'>
                     <div className='animate_fade'>
-                        <a href="mailto:tsvetan.eftenov@gmail.com" className="media-icon">
+                        <a href="mailto:tsvetan.eftenov@gmail.com" className="media-icon" target="_blank">
                             <i className="fa fa-envelope"></i>
                         </a>
                     </div>

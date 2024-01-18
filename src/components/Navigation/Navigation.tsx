@@ -38,11 +38,11 @@ export const Navigation = ({ currentSection }: { currentSection: string }) => {
                 </div>
 
                 <ul className="side-nav-bot">
-                    <li><a href="https://github.com/eftenow" className="media-icon github"><i className="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://gitlab.com/eftenow" className="media-icon gitlab"><i className="fa-brands fa-gitlab"></i></a></li>
-                    <li><a href="#" className="media-icon facebook"><i className="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/tsvetan-eftenov/" className="media-icon linkedin"><i className="uil uil-linkedin"></i></a></li>
-                    <li><a href="mailto:tsvetan.eftenov@gmail.com" className="media-icon message">
+                    <li><a href="https://github.com/eftenow" className="media-icon github" target="_blank"><i className="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://gitlab.com/eftenow" className="media-icon gitlab" target="_blank"><i className="fa-brands fa-gitlab"></i></a></li>
+                    <li><a href="#" className="media-icon facebook" target="_blank"><i className="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/tsvetan-eftenov/" className="media-icon linkedin" target="_blank"><i className="uil uil-linkedin"></i></a></li>
+                    <li><a href="mailto:tsvetan.eftenov@gmail.com" className="media-icon message" target="_blank">
                         <i className="fa fa-envelope"></i>
                     </a></li>
 
