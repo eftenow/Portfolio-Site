@@ -21,7 +21,7 @@ export const Navigation = ({ currentSection }: { currentSection: string }) => {
         <header className="header left-section">
             <nav className="primary-menu navbar-expand bg-dark">
                 <div className="side-nav-top">
-                    <div className="avatar-container"><img src="../public/images/resume-pic.jpg" alt="profile" /></div>
+                    <div className="avatar-container"><img src="images/resume-pic.jpg" alt="profile" /></div>
                     <h2 className="name">Tsvetan Eftenov</h2>
                 </div>
 
