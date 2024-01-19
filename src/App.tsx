@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio/Portfolio"
 import Contact from "./components/Contact/Contact"
 import Footer from "./components/Footer/Footer"
 import useCurrentSection from "./hooks/useCurrentSection"
+import GetToTopButton from "./components/BackToTopBtn/BackToTopBtn"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Portfolio />
           <Contact />
           <Footer />
+          <GetToTopButton />
         </main>
       </div>
   )
