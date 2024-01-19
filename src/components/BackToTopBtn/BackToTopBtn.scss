@@ -4,15 +4,15 @@
     bottom: 1rem;
     background-color: $primary-clr;
     color: $white;
-    border-radius: 50%;
+    border-radius: 0.6rem;
     transition: all 0.6s ease, color 0.6s ease, opacity 0.6s ease;
     font-weight: $fw-bold;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
     font-size: 18px;
-    height: 44px;
-    width: 44px;
+    height: 38px;
+    width: 38px;
     border: $primary-clr;
 
     i {
@@ -28,6 +28,7 @@
     border-color: $primary-clr !important;
     color: $heading-font-color;
     color: $white;
+    opacity: 1;
     cursor: pointer;
     font-weight: 900;
 }
