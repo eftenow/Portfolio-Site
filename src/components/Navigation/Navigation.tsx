@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 export const Navigation = ({ currentSection }: { currentSection: string }) => {
     function toggleNavigation() {
         const burgerBtn = document.querySelector('.burger-menu-button') as HTMLButtonElement;
@@ -15,6 +17,27 @@ export const Navigation = ({ currentSection }: { currentSection: string }) => {
             burgerBtn.classList.remove('close-nav');
         }
     }
+
+    useEffect(() => {
+        const handleOutsideClick = (ev: MouseEvent) => {
+            const burgerBtn = document.querySelector('.burger-menu-button') as HTMLButtonElement;
+            const navigation = document.querySelector('.side-nav-mid') as HTMLUListElement;
+            const target = ev.target as HTMLElement;
+
+            if (!burgerBtn.contains(target) && !navigation.contains(target)) {
+                if (navigation.classList.contains('active-mobile-nav')) {
+                    navigation.classList.remove('active-mobile-nav');
+                    burgerBtn.classList.remove('close-nav');
+                }
+            }
+        };
+
+        document.addEventListener('click', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('click', handleOutsideClick);
+        };
+    }, []);
 
 
     return (
