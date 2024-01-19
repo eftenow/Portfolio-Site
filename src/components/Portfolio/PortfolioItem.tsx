@@ -19,7 +19,10 @@ const PortfolioItem = ({ name, img, link, description, visit } :PortfolioListIte
                 <p className="project-descritpion">{description}</p>
                 <p className='project-visit'>{visit}</p>
 
-                <a href={link} className="btn-primary btn visit-btn">{buttons.visit}</a>
+                <a href={link} className="btn-primary btn visit-btn">
+                    {buttons.visit}
+                    <i className="fa-solid fa-arrow-right"></i>
+                    </a>
             </div>
         </div>
     )

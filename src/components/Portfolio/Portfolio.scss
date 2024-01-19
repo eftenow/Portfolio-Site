@@ -169,6 +169,16 @@
         margin-top: 0.75rem;
         margin-bottom: -0.5rem;
     }
+
+    &:hover i{
+        transform: translateX(0.25rem);
+    }
+
+    & i{
+        margin-left: 0.6rem;
+        font-weight: 900;
+        transition: transform 0.4s ease;
+    }
 }
 
 .slick-prev,
