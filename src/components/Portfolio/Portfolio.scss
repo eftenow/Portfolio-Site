@@ -146,6 +146,7 @@
         height: 1.5px;
         background-color: $paragraph-clr;
         margin: 1rem auto;
+        margin-bottom: 0.75rem;
     }
 }
 
@@ -185,8 +186,8 @@
 .slick-next {
     top: 59%;
 
-    @include mobile{
-        top: 54.5%;
+    @include tablet-small{
+        display: none !important;
     }
 }
 
@@ -213,10 +214,6 @@
 
     @include tablet {
         font-size: 32px;
-    }
-
-    @include mobile {
-        font-size: 28px;
     }
 }
 
